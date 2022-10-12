@@ -3,6 +3,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Menu } from '../components/Menu'
 import styles from '../styles/Home.module.css'
+import stylesCrew from '../styles/Crew.module.css'
+import { PersonFrame, PersonCardLargeFrame, PersonCardMediumFrame, PersonCardSmallFrame } from '../components/PersonFrame'
 import NextLink from 'next/link'
 
 const Home: NextPage = () => {
@@ -25,69 +27,10 @@ const Home: NextPage = () => {
           Käpt&apos;n, Matrosen und Tiere an Bord
         </p>
 
-        <div className={styles.grid}>
-          <NextLink href="/" className={styles.card}>
-            <div>
-              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
-              <h2>Käpt&apos;n</h2>
-            </div>
-          </NextLink>
+        <div className={stylesCrew.gridContainer} style={{gridTemplateColumns: 'repeat(10, 1fr)', gridTemplateRows: 'repeat(25, 1fr)'}}>
           
-          <NextLink href="/" className={styles.card}>
-            <div>
-              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
-              <h2>Erster Maat</h2>
-            </div>
-          </NextLink>
-          
-          <NextLink href="/" className={styles.card}>
-            <div>
-              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
-              <h2>Schatzmeisterin</h2>
-            </div>
-          </NextLink>
-          
-          <NextLink href="/" className={styles.card}>
-            <div>
-              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
-              <h2>Papagei</h2>
-            </div>
-          </NextLink>
-          
-          <NextLink href="/" className={styles.card}>
-            <div>
-              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
-              <h2>Rick Astley</h2>
-            </div>
-          </NextLink>
-          
-          <NextLink href="/" className={styles.card}>
-            <div>
-              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
-              <h2>D. Knuth</h2>
-            </div>
-          </NextLink>
-          
-          <NextLink href="/" className={styles.card}>
-            <div>
-              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
-              <h2>Statist 1</h2>
-            </div>
-          </NextLink>
-          
-          <NextLink href="/" className={styles.card}>
-            <div>
-              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
-              <h2>Statist 2</h2>
-            </div>
-          </NextLink>
-          
-          <NextLink href="/" className={styles.card}>
-            <div>
-              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
-              <h2>Niemand</h2>
-            </div>
-          </NextLink>
+          <PersonFrame src="/crew/pirate.jpg" frameSize="large" frameStyle="frame7" gridColStart={2} gridColEnd={6} gridRowStart={1} gridRowEnd={4}/>
+          <PersonFrame src="/crew/pirate.jpg" frameSize="small" frameStyle="frame2" gridColStart={6} gridColEnd={8} gridRowStart={1} gridRowEnd={1}/>
         </div>
       </main>
 
