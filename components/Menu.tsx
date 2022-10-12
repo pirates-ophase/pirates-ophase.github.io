@@ -35,6 +35,9 @@ export const Menu = () => {
         <div data-depth="0.4" className={styles.wave}>
             <div/>
         </div>
+        <div data-depth="0.5" className={styles.ship}>
+            <img src="/menu/pirateShip_wood.png" />
+        </div>
         <div data-depth="0.6" className={styles.wave}>
             <div />
         </div>
