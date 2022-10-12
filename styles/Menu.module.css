@@ -2,18 +2,57 @@
     font-family: 'Pieces of Eight';
     font-size: 3em;
     width: 100%;
-    height: 500px;
+    height: 70vh;
+    padding: 0;
+    margin: 0;
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+    display: block;
+    overflow: hidden;
+    pointer-events: none;
 }
 
-.menu > * > * {
-    margin: 100px;
+.menu > [data-depth="0.3"] > * {
+    position: relative;
+    top: 15vh;
+    left: calc(50vw - 50%);
+    margin: 20px;
+    pointer-events: auto;
 }
 
-@keyframes identifier {
-    
+.frontWave > div {
+    background-image: url('/menu/wave-paint.png');
+    width: 150vw;
+    height: 300px;
+    position: relative;
+    left: -25vw;
+}
+
+.wave > div {
+    background-image: url('/menu/wave-plain.png');
+    width: 150vw;
+    height: 300px;
+    position: relative;
+    left: -25vw;
+}
+
+.wave[data-depth="0.0"] > div {
+    top: 20vh;
+}
+
+.wave[data-depth="0.2"] > div {
+    top: 25vh;
+    left: -15vw;
+}
+
+.wave[data-depth="0.4"] > div {
+    top: 30vh;
+}
+
+.wave[data-depth="0.6"] > div {
+    top: 35vh;
+    left: -15vw;
+}
+
+.frontWave[data-depth="0.8"] > div {
+    top: 40vh;
 }
