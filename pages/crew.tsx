@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Menu } from '../components/Menu'
 import styles from '../styles/Home.module.css'
+import NextLink from 'next/link'
 
 const Home: NextPage = () => {
   return (
@@ -21,54 +22,72 @@ const Home: NextPage = () => {
         </h1>
 
         <p className={styles.description}>
-          Käpt'n, Matrosen und Tiere an Bord
+          Käpt&apos;n, Matrosen und Tiere an Bord
         </p>
 
         <div className={styles.grid}>
-          <a href="/" className={styles.card}>
-            <img src="/crew/pirate.jpg" width={128}/>
-            <h2>Käpt'n</h2>
-          </a>
+          <NextLink href="/" className={styles.card}>
+            <div>
+              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
+              <h2>Käpt&apos;n</h2>
+            </div>
+          </NextLink>
           
-          <a href="/" className={styles.card}>
-            <img src="/crew/pirate.jpg" width={128}/>
-            <h2>Erster Maat</h2>
-          </a>
+          <NextLink href="/" className={styles.card}>
+            <div>
+              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
+              <h2>Erster Maat</h2>
+            </div>
+          </NextLink>
           
-          <a href="/" className={styles.card}>
-            <img src="/crew/pirate.jpg" width={128}/>
-            <h2>Schatzmeisterin</h2>
-          </a>
+          <NextLink href="/" className={styles.card}>
+            <div>
+              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
+              <h2>Schatzmeisterin</h2>
+            </div>
+          </NextLink>
           
-          <a href="/" className={styles.card}>
-            <img src="/crew/pirate.jpg" width={128}/>
-            <h2>Papagei</h2>
-          </a>
+          <NextLink href="/" className={styles.card}>
+            <div>
+              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
+              <h2>Papagei</h2>
+            </div>
+          </NextLink>
           
-          <a href="/" className={styles.card}>
-            <img src="/crew/pirate.jpg" width={128}/>
-            <h2>Rick Astley</h2>
-          </a>
+          <NextLink href="/" className={styles.card}>
+            <div>
+              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
+              <h2>Rick Astley</h2>
+            </div>
+          </NextLink>
           
-          <a href="/" className={styles.card}>
-            <img src="/crew/pirate.jpg" width={128}/>
-            <h2>D. Knuth</h2>
-          </a>
+          <NextLink href="/" className={styles.card}>
+            <div>
+              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
+              <h2>D. Knuth</h2>
+            </div>
+          </NextLink>
           
-          <a href="/" className={styles.card}>
-            <img src="/crew/pirate.jpg" width={128}/>
-            <h2>Statist 1</h2>
-          </a>
+          <NextLink href="/" className={styles.card}>
+            <div>
+              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
+              <h2>Statist 1</h2>
+            </div>
+          </NextLink>
           
-          <a href="/" className={styles.card}>
-            <img src="/crew/pirate.jpg" width={128}/>
-            <h2>Statist 2</h2>
-          </a>
+          <NextLink href="/" className={styles.card}>
+            <div>
+              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
+              <h2>Statist 2</h2>
+            </div>
+          </NextLink>
           
-          <a href="/" className={styles.card}>
-            <img src="/crew/pirate.jpg" width={128}/>
-            <h2>Niemand</h2>
-          </a>
+          <NextLink href="/" className={styles.card}>
+            <div>
+              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
+              <h2>Niemand</h2>
+            </div>
+          </NextLink>
         </div>
       </main>
 

@@ -1,0 +1,22 @@
+name: 'lint'
+
+on:
+  push # every push
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Cloning repo
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0 # speeds up the checkout
+
+    - name: Set up pnpm (package manager)
+      uses: pnpm/action-setup@v2.2.2
+
+    - name: Install dependencies
+      run: pnpm install
+
+    - name: Run linter
+      run: pnpm lint

@@ -36,7 +36,9 @@ export const Menu = () => {
             <div/>
         </div>
         <div data-depth="0.5" className={styles.ship}>
-            <img src="/menu/pirateShip_wood.png" />
+            <img
+                src="/menu/pirateShip_wood.png"
+                alt="Pirate ship drawn on a pice of wood"/>
         </div>
         <div data-depth="0.6" className={styles.wave}>
             <div />

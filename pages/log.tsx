@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Menu } from '../components/Menu'
 import styles from '../styles/Home.module.css'
+import NextLink from 'next/link'
 
 const Home: NextPage = () => {
   return (
@@ -25,20 +26,26 @@ const Home: NextPage = () => {
         </p>
 
         <div className={styles.grid}>
-          <a href="/" className={styles.card}>
-            <img src="/crew/pirate.jpg" width={128}/>
-            <h2>Pirate beim Biertrinken</h2>
-          </a>
+          <NextLink href="/" className={styles.card}>
+            <div>
+              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
+              <h2>Pirate beim Biertrinken</h2>
+            </div>
+          </NextLink>
           
-          <a href="/" className={styles.card}>
-            <img src="/crew/pirate.jpg" width={128}/>
-            <h2>Pirate beim Kochen</h2>
-          </a>
+          <NextLink href="/" className={styles.card}>
+            <div>
+              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
+              <h2>Pirate beim Kochen</h2>
+            </div>
+          </NextLink>
           
-          <a href="/" className={styles.card}>
-            <img src="/crew/pirate.jpg" width={128}/>
-            <h2>Pirate beim Schifftransport</h2>
-          </a>
+          <NextLink href="/" className={styles.card}>
+            <div>
+              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
+              <h2>Pirate beim Schifftransport</h2>
+            </div>
+          </NextLink>
         </div>
           
         <p className={styles.description}>
@@ -46,20 +53,26 @@ const Home: NextPage = () => {
         </p>
 
         <div className={styles.grid}>
-          <a href="/" className={styles.card}>
-            <img src="/crew/pirate.jpg" width={128}/>
-            <h2>Ich im Voicechat</h2>
-          </a>
+          <NextLink href="/" className={styles.card}>
+            <div>
+              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
+              <h2>Ich im Voicechat</h2>
+            </div>
+          </NextLink>
           
-          <a href="/" className={styles.card}>
-            <img src="/crew/pirate.jpg" width={128}/>
-            <h2>Du im Voicechat</h2>
-          </a>
+          <NextLink href="/" className={styles.card}>
+            <div>
+              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
+              <h2>Du im Voicechat</h2>
+            </div>
+          </NextLink>
           
-          <a href="/" className={styles.card}>
-            <img src="/crew/pirate.jpg" width={128}/>
-            <h2>Wir im Voicechat</h2>
-          </a>
+          <NextLink href="/" className={styles.card}>
+            <div>
+              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
+              <h2>Wir im Voicechat</h2>
+            </div>
+          </NextLink>
         </div>
       </main>
 
