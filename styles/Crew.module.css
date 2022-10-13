@@ -14,9 +14,7 @@
 
 @media only screen and (max-device-width: 480px) {
     .gridContainer {
-    display: flow;
+    display: flow-root;
     width: 85%;
-    row-gap: 3px;
     }
-
 }
