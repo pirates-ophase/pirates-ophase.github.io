@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Menu } from '../components/Menu'
 import styles from '../styles/Home.module.css'
+import NextLink from 'next/link'
 
 const Home: NextPage = () => {
   return (
@@ -25,50 +26,68 @@ const Home: NextPage = () => {
         </p>
 
         <div className={styles.grid}>
-          <a href="/" className={styles.card}>
-            <img src="/crew/pirate.jpg" width={128}/>
-            <h2>Montag</h2>
-          </a>
+          <NextLink href="/" className={styles.card}>
+            <div>
+              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
+              <h2>Montag</h2>
+            </div>
+          </NextLink>
           
-          <a href="/" className={styles.card}>
-            <img src="/crew/pirate.jpg" width={128}/>
-            <h2>Dienstag</h2>
-          </a>
+          <NextLink href="/" className={styles.card}>
+            <div>
+              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
+              <h2>Dienstag</h2>
+            </div>
+          </NextLink>
           
-          <a href="/" className={styles.card}>
-            <img src="/crew/pirate.jpg" width={128}/>
-            <h2>Mittwoch</h2>
-          </a>
+          <NextLink href="/" className={styles.card}>
+            <div>
+              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
+              <h2>Mittwoch</h2>
+            </div>
+          </NextLink>
           
-          <a href="/" className={styles.card}>
-            <img src="/crew/pirate.jpg" width={128}/>
-            <h2>Donnerstag</h2>
-          </a>
+          <NextLink href="/" className={styles.card}>
+            <div>
+              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
+              <h2>Donnerstag</h2>
+            </div>
+          </NextLink>
           
-          <a href="/" className={styles.card}>
-            <img src="/crew/pirate.jpg" width={128}/>
-            <h2>Freitag</h2>
-          </a>
+          <NextLink href="/" className={styles.card}>
+            <div>
+              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
+              <h2>Freitag</h2>
+            </div>
+          </NextLink>
           
-          <a href="/" className={styles.card}>
-            <img src="/crew/pirate.jpg" width={128}/>
-            <h2>Samstag</h2>
-          </a>
+          <NextLink href="/" className={styles.card}>
+            <div>
+              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
+              <h2>Samstag</h2>
+            </div>
+          </NextLink>
           
-          <a href="/" className={styles.card}>
-            <img src="/crew/pirate.jpg" width={128}/>
-            <h2>Sonntag</h2>
-          </a>
+          <NextLink href="/" className={styles.card}>
+            <div>
+              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
+              <h2>Sonntag</h2>
+            </div>
+          </NextLink>
           
-          <a href="/" className={styles.card}>
-            <img src="/crew/pirate.jpg" width={128}/>
-            <h2>Semester 1</h2>
-          </a>
+          <NextLink href="/" className={styles.card}>
+            <div>
+              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
+              <h2>Semester 1</h2>
+            </div>
+          </NextLink>
           
-          <a href="/" className={styles.card}>
-            <img src="/crew/pirate.jpg" width={128}/>
-            <h2>Semester 2</h2>
-          </a>
+          <NextLink href="/" className={styles.card}>
+            <div>
+              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
+              <h2>Semester 2</h2>
+            </div>
+          </NextLink>
         </div>
       </main>
 
