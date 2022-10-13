@@ -8,6 +8,11 @@
   align-items: center;
 }
 
+.content {
+  max-width: 50rem;
+  text-align: justify;
+}
+
 .footer {
   display: flex;
   flex: 1;
@@ -38,12 +43,9 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
+  font-size: 6rem;
   text-align: center;
+  font-family: 'Pieces of Eight';
 }
 
 .description {
