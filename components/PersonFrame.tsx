@@ -1,5 +1,5 @@
 import { getFontOverrideCss } from 'next/dist/server/font-utils';
-import { CSSProperties, HTMLAttributes } from 'react';
+import { CSSProperties, HTMLAttributes, useEffect, useState } from 'react';
 import styles from '../styles/Crew.module.css'
 
 interface PersonFrameProps {
@@ -32,17 +32,24 @@ export const PersonFrame = (props: PersonFrameProps) => {
             break;
     }
 
-    var frameSize: string = "";
-    switch (props.frameSize) {
-        case "small": frameSize = '50px solid transparent';
-            break;
-        case "medium": frameSize = '100px solid transparent';
-            break;
-        case "large": frameSize = '150px solid transparent';
-    }
-
-    return <div className={styles.gridItemFrame} 
-    style={{border: frameSize,
+    var frameSize: string = props.frameSize + " solid transparent";
+    const [mobile, setMobile] = useState(false);
+    useEffect(() => {
+        let mql = window.matchMedia('(max-width: 480px)');
+        setMobile(mql.matches);
+    });
+    
+    if (mobile) {
+        return <div className={styles.gridItemFrame} 
+        style={{border: frameSize,
+            borderImage: frameImage,
+            width: '100%',
+            height: '100%'}}>
+            <img src={props.src} style={{width: '100%', height: '100%'}}/>
+        </div>
+    } else {
+        return <div className={styles.gridItemFrame} 
+        style={{border: frameSize,
             borderImage: frameImage,
             gridColumnStart: props.gridColStart, 
             gridColumnEnd: props.gridColEnd, 
@@ -50,8 +57,11 @@ export const PersonFrame = (props: PersonFrameProps) => {
             gridRowEnd: props.gridRowEnd,
             width: '100%',
             height: '100%'}}>
-        <img src={props.src} style={{width: '100%', height: '100%'}}/>
-    </div>
+            <img src={props.src} style={{width: '100%', height: '100%'}}/>
+        </div>
+    }
+
+    
 }
 
 

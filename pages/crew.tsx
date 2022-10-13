@@ -27,10 +27,10 @@ const Home: NextPage = () => {
           Käpt&apos;n, Matrosen und Tiere an Bord
         </p>
 
-        <div className={stylesCrew.gridContainer} style={{gridTemplateColumns: 'repeat(10, 1fr)', gridTemplateRows: 'repeat(25, 1fr)'}}>
+        <div className={stylesCrew.gridContainer} >
           
-          <PersonFrame src="/crew/pirate.jpg" frameSize="large" frameStyle="frame7" gridColStart={2} gridColEnd={6} gridRowStart={1} gridRowEnd={4}/>
-          <PersonFrame src="/crew/pirate.jpg" frameSize="small" frameStyle="frame2" gridColStart={6} gridColEnd={8} gridRowStart={1} gridRowEnd={1}/>
+          <PersonFrame src="/crew/pirate.jpg" frameSize="50px" frameStyle="frame2" gridColStart={1} gridColEnd={10} gridRowStart={1} gridRowEnd={10}/>
+          <PersonFrame src="/crew/pirate.jpg" frameSize="20px" frameStyle="frame4" gridColStart={15} gridColEnd={26} gridRowStart={10} gridRowEnd={35}/>
         </div>
       </main>
 
