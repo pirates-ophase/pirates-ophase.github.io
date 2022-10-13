@@ -19,15 +19,17 @@ const Home: NextPage = () => {
       <Menu/>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Crew
-        </h1>
+        
 
-        <p className={styles.description}>
-          Käpt&apos;n, Matrosen und Tiere an Bord
-        </p>
+        
 
         <div className={stylesCrew.gridContainer} >
+        <h1 className={styles.title} style={{gridColumnStart: 4, gridRowStart: 4}}>
+          Crew
+        </h1>
+        <p className={styles.description} style={{gridColumnStart: 5, gridColumnEnd: 20, gridRowStart: 5}}>
+          Käpt&apos;n, Matrosen und Tiere an Bord
+        </p>
           <PersonFrame src="/crew/people/lena.jpg" frameSize="90px" frameStyle="frame2" gridColStart={40} gridColEnd={74} gridRowStart={1} gridRowEnd={40}/>
           <PersonFrame src="/crew/people/zoe.jpg" frameSize="30px" frameStyle="frame3" gridColStart={23} gridColEnd={35} gridRowStart={46} gridRowEnd={56}/>
           <PersonFrame src="/crew/people/tobi.jpg" frameSize="35px" frameStyle="frame5" gridColStart={24} gridColEnd={36} gridRowStart={99} gridRowEnd={108}/>
@@ -40,6 +42,7 @@ const Home: NextPage = () => {
           <PersonFrame src="/crew/people/daniel.jpg" frameSize="25px" frameStyle="frame6" gridColStart={50} gridColEnd={63} gridRowStart={90} gridRowEnd={101}/>
           <PersonFrame src="/crew/people/dimi.jpg" frameSize="60px" frameStyle="frame5" gridColStart={64} gridColEnd={79} gridRowStart={93} gridRowEnd={108}/>
           <PersonFrame src="/crew/people/edwin.jpg" frameSize="30px" frameStyle="frame4" gridColStart={26} gridColEnd={34} gridRowStart={90} gridRowEnd={97}/>
+          <PersonFrame src="/crew/people/jannes.jpg" frameSize="35px" frameStyle="frame1" gridColStart={26} gridColEnd={39} gridRowStart={20} gridRowEnd={34}/>
           <PersonFrame src="/crew/people/jasmin.jpg" frameSize="25px" frameStyle="frame1" gridColStart={36} gridColEnd={50} gridRowStart={93} gridRowEnd={109}/>
           <PersonFrame src="/crew/people/joschka_max.jpg" frameSize="180px" frameStyle="frame6" gridColStart={22} gridColEnd={75} gridRowStart={110} gridRowEnd={142}/>
           <PersonFrame src="/crew/people/julian.jpg" frameSize="50px" frameStyle="frame2" gridColStart={5} gridColEnd={23} gridRowStart={88} gridRowEnd={110}/>
@@ -50,6 +53,7 @@ const Home: NextPage = () => {
           <PersonFrame src="/crew/people/moritz.jpg" frameSize="54px" frameStyle="frame5" gridColStart={30} gridColEnd={45} gridRowStart={143} gridRowEnd={156}/>
           <PersonFrame src="/crew/people/nala.jpg" frameSize="50px" frameStyle="frame6" gridColStart={50} gridColEnd={75} gridRowStart={40} gridRowEnd={65}/>
           <PersonFrame src="/crew/people/pablo.jpg" frameSize="55px" frameStyle="frame4" gridColStart={3} gridColEnd={25} gridRowStart={22} gridRowEnd={43}/>
+          <PersonFrame src="/crew/people/paul.jpg" frameSize="20px" frameStyle="frame6" gridColStart={23} gridColEnd={40} gridRowStart={3} gridRowEnd={20}/>
           <PersonFrame src="/crew/people/philipp_max_algebra.jpg" frameSize="90px" frameStyle="frame1" gridColStart={6} gridColEnd={35} gridRowStart={58} gridRowEnd={87}/>
           <PersonFrame src="/crew/people/saad.jpg" frameSize="51px" frameStyle="frame6" gridColStart={5} gridColEnd={22} gridRowStart={125} gridRowEnd={140}/>
           <PersonFrame src="/crew/people/simon_gurke.jpg" frameSize="50px" frameStyle="frame2" gridColStart={10} gridColEnd={23} gridRowStart={45} gridRowEnd={58}/>
