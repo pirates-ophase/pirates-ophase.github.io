@@ -25,7 +25,6 @@
     left: -20px;
     width: 110%;
     transform: scaleX(-1);
-    filter: saturate(0.5) brightness(0.7)
 }
 
 .frontWave > div {
