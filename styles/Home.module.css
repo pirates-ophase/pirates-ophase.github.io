@@ -6,10 +6,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: url('/bg_texture_dark.png') repeat;
+  background-size: 500px;
+  box-shadow: black 0 -100px 60rem 200px inset;
 }
 
 .content {
   max-width: 50rem;
+  margin: 10rem;
   text-align: justify;
 }
 
@@ -49,9 +53,10 @@
 }
 
 .description {
+  font-family: serif;
   margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+  line-height: 1.8;
+  font-size: 1.6rem;
 }
 
 .code {
