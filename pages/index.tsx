@@ -54,7 +54,7 @@ const Home: NextPage = () => {
 
             <a href="https://kit.edu" className={styles.card}>
               <h2>Zur Uni &rarr;</h2>
-              <p>Für offizielle Seiten zum Studium geht's hier lang.</p>
+              <p>Für offizielle Seiten zum Studium geht&apos;s hier lang.</p>
             </a>
           </div>
         </section>
