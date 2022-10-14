@@ -4,6 +4,7 @@ import NextLink from 'next/link'
 import Image from 'next/image'
 import { Menu } from '../components/Menu'
 import styles from '../styles/Home.module.css'
+import piratesImage from '../public/pirates.png'
 
 const Home: NextPage = () => {
   return (
@@ -21,6 +22,10 @@ const Home: NextPage = () => {
           <h1 className={styles.title}>
             Ahoy Matrosen!
           </h1>
+          
+          <div className={styles.image}>
+            <Image src={piratesImage} />
+          </div>
 
           <p className={styles.description}>
             Wir sind die Pirates, die beste&trade; der dreizehn O-Phasengruppen
