@@ -6,6 +6,39 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: url('/bg_texture_dark.png') repeat;
+  background-size: 500px;
+  box-shadow: black 0 -100px 60rem 200px inset;
+}
+
+.content {
+  max-width: 50rem;
+  margin: 5rem 10rem;
+  text-align: justify;
+}
+
+.content ul {
+  padding-left: 1rem;
+}
+
+.content li {
+  list-style: none;
+}
+
+.content .image {
+  padding: 4rem 1rem 0 1rem;
+}
+
+.content li::before {
+  content: '';
+  display: inline-block;
+  height: 32px;
+  width: 30px;
+  background-image: url('/menu/compass.png');
+
+  position: relative;
+  bottom: -0.25rem;
+  margin-right: 0.75rem;
 }
 
 .footer {
@@ -38,17 +71,14 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
+  font-size: 6rem;
   text-align: center;
+  font-family: 'Pieces of Eight';
 }
 
 .description {
   margin: 4rem 0;
-  line-height: 1.5;
+  line-height: 1.8;
   font-size: 1.5rem;
 }
 
