@@ -1,94 +1,76 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import { Menu } from '../components/Menu'
 import styles from '../styles/Home.module.css'
 import NextLink from 'next/link'
+import Layout from '../components/Layout'
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <Layout>
       <Head>
         <title>Logbuch</title>
         <meta name="description" content="Es war einmal..." />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Menu/>
+      <h1 className={styles.title}>
+        Logbuch
+      </h1>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Logbuch
-        </h1>
+      <p className={styles.description}>
+        O-Phase 2021
+      </p>
 
-        <p className={styles.description}>
-          O-Phase 2021
-        </p>
+      <div className={styles.grid}>
+        <NextLink href="/" className={styles.card}>
+          <div>
+            <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
+            <h2>Pirate beim Biertrinken</h2>
+          </div>
+        </NextLink>
+        
+        <NextLink href="/" className={styles.card}>
+          <div>
+            <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
+            <h2>Pirate beim Kochen</h2>
+          </div>
+        </NextLink>
+        
+        <NextLink href="/" className={styles.card}>
+          <div>
+            <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
+            <h2>Pirate beim Schifftransport</h2>
+          </div>
+        </NextLink>
+      </div>
+        
+      <p className={styles.description}>
+        O-Phase 2020
+      </p>
 
-        <div className={styles.grid}>
-          <NextLink href="/" className={styles.card}>
-            <div>
-              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
-              <h2>Pirate beim Biertrinken</h2>
-            </div>
-          </NextLink>
-          
-          <NextLink href="/" className={styles.card}>
-            <div>
-              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
-              <h2>Pirate beim Kochen</h2>
-            </div>
-          </NextLink>
-          
-          <NextLink href="/" className={styles.card}>
-            <div>
-              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
-              <h2>Pirate beim Schifftransport</h2>
-            </div>
-          </NextLink>
-        </div>
-          
-        <p className={styles.description}>
-          O-Phase 2020
-        </p>
-
-        <div className={styles.grid}>
-          <NextLink href="/" className={styles.card}>
-            <div>
-              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
-              <h2>Ich im Voicechat</h2>
-            </div>
-          </NextLink>
-          
-          <NextLink href="/" className={styles.card}>
-            <div>
-              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
-              <h2>Du im Voicechat</h2>
-            </div>
-          </NextLink>
-          
-          <NextLink href="/" className={styles.card}>
-            <div>
-              <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
-              <h2>Wir im Voicechat</h2>
-            </div>
-          </NextLink>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
-    </div>
+      <div className={styles.grid}>
+        <NextLink href="/" className={styles.card}>
+          <div>
+            <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
+            <h2>Ich im Voicechat</h2>
+          </div>
+        </NextLink>
+        
+        <NextLink href="/" className={styles.card}>
+          <div>
+            <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
+            <h2>Du im Voicechat</h2>
+          </div>
+        </NextLink>
+        
+        <NextLink href="/" className={styles.card}>
+          <div>
+            <Image src="/crew/pirate.jpg" width={128} height={128} alt="demo pirate image"/>
+            <h2>Wir im Voicechat</h2>
+          </div>
+        </NextLink>
+      </div>
+    </Layout>
   )
 }
 
