@@ -1,0 +1,35 @@
+.crewGrid {
+    display: grid;
+    width: 85%;
+    grid-auto-columns: 10px;
+    grid-auto-rows: 10px;
+    grid-auto-flow: column;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+
+.gridItemFrame {
+    padding: 0px;
+}
+
+.nameTag {
+    background-image: url(/crew/sign.png);
+    word-wrap: break-word;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: rgb(245, 245, 245);
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .crewGrid {
+    display: flow-root;
+    width: 85%;
+    }
+}
