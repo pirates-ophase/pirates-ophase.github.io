@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import NextLink from 'next/link'
 import Image from 'next/image'
 import { Menu } from '../components/Menu'
 import styles from '../styles/Home.module.css'
@@ -46,17 +47,11 @@ const Home: NextPage = () => {
             Wir freuen uns auf euch. Yohoho!
           </p>
 
-          <div className={styles.grid}>
-            <a href="https://o-phase.com" className={styles.card}>
-              <h2>Zur Fachschaft &rarr;</h2>
-              <p>Hier findet ihr allgemeine Informationen zur O-Phase.</p>
-            </a>
-
-            <a href="https://kit.edu" className={styles.card}>
-              <h2>Zur Uni &rarr;</h2>
-              <p>Für offizielle Seiten zum Studium geht&apos;s hier lang.</p>
-            </a>
-          </div>
+          <ul className={styles.description}>
+            <li><a href="https://www.instagram.com/kit_pirates/">Instagrrrram &rarr;</a></li>
+            <li><NextLink href="/plan">Wochenplan 2022 &rarr;</NextLink></li>
+            <li><a href="https://o-phase.com">Allgemeine O-Phasen Infos der Fachschaft &rarr;</a></li>
+          </ul>
         </section>
       </main>
 
