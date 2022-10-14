@@ -4,7 +4,7 @@ import NextLink from 'next/link'
 import Image from 'next/image'
 import { Menu } from '../components/Menu'
 import styles from '../styles/Home.module.css'
-import piratesImage from '../public/pirates.png'
+import { PersonFrame } from '../components/PersonFrame'
 
 const Home: NextPage = () => {
   return (
@@ -24,7 +24,14 @@ const Home: NextPage = () => {
           </h1>
           
           <div className={styles.image}>
-            <Image src={piratesImage} />
+            <PersonFrame
+              src="/pirates.png"
+              frameSize='4.5rem'
+              frameStyle='frame2'
+              gridColEnd={1}
+              gridColStart={1}
+              gridRowEnd={1}
+              gridRowStart={1}/>
           </div>
 
           <p className={styles.description}>
