@@ -44,7 +44,8 @@ const Home: NextPage = () => {
           <PersonFrame src="/crew/crewmates/christian.jpg" frameSize="40px" frameStyle="frame3" gridColStart={27} gridColEnd={40} gridRowStart={34} gridRowEnd={45}/>
           <PersonFrame src="/crew/crewmates/daniel.jpg" frameSize="25px" frameStyle="frame6" gridColStart={50} gridColEnd={63} gridRowStart={90} gridRowEnd={101}/>
           <PersonFrame src="/crew/crewmates/dimi.jpg" frameSize="60px" frameStyle="frame5" gridColStart={64} gridColEnd={79} gridRowStart={93} gridRowEnd={108}/>
-          <PersonFrame src="/crew/crewmates/edwin.jpg" frameSize="35px" frameStyle="frame4" gridColStart={26} gridColEnd={34} gridRowStart={90} gridRowEnd={97}/>
+          <PersonFrame src="/crew/crewmates/edwin.jpg" frameSize="35px" frameStyle="frame4" gridColStart={26} gridColEnd={34} gridRowStart={90} gridRowEnd={97}/>         
+          <PersonFrame src="/crew/crewmates/gersti.jpg" frameSize="19px" frameStyle="frame2" gridColStart={2} gridColEnd={15} gridRowStart={157} gridRowEnd={169}/>
           <PersonFrame src="/crew/crewmates/jannes.jpg" frameSize="35px" frameStyle="frame1" gridColStart={26} gridColEnd={39} gridRowStart={20} gridRowEnd={34}/>
           <PersonFrame src="/crew/crewmates/jasmin.jpg" frameSize="25px" frameStyle="frame1" gridColStart={36} gridColEnd={50} gridRowStart={93} gridRowEnd={109}/>
           <PersonFrame src="/crew/crewmates/jonas.jpg" frameSize="30px" frameStyle="frame5" gridColStart={1} gridColEnd={10} gridRowStart={43} gridRowEnd={52}/>
