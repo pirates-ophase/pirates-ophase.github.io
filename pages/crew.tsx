@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { Menu } from '../components/Menu'
 import styles from '../styles/Home.module.css'
 import stylesCrew from '../styles/Crew.module.css'
-import { PersonFrame, PersonCardLargeFrame, PersonCardMediumFrame, PersonCardSmallFrame } from '../components/PersonFrame'
+import { PersonFrame } from '../components/PersonFrame'
 import { NameTag } from '../components/NameTag'
 import NextLink from 'next/link'
 
@@ -148,7 +148,7 @@ const Home: NextPage = () => {
           <NameTag name={'Stefan'} fieldOfStudy={'Informatik Bachelor'} semesterNmbr={3} fontSizeTop={"130%"} fontSizeBottom={"50%"} gridColStart={17} gridColEnd={23} gridRowStart={146} gridRowEnd={152}/>
 
           <PersonFrame src="/crew/crewmates/ville.jpg" frameSize="10px" frameStyle="frame2" gridColStart={65} gridColEnd={70} gridRowStart={65} gridRowEnd={70}/>
-          <NameTag name={'Ville'} fieldOfStudy={'Informatik Bachelor'} semesterNmbr={3} fontSizeTop={"130%"} fontSizeBottom={"50%"} gridColStart={68} gridColEnd={72} gridRowStart={66} gridRowEnd={70}/>
+          <NameTag name={'Ville'} fieldOfStudy={'Police Service Bachelor'} semesterNmbr={6} fontSizeTop={"130%"} fontSizeBottom={"50%"} gridColStart={68} gridColEnd={72} gridRowStart={66} gridRowEnd={70}/>
           
           <PersonFrame src="/crew/crewmates/pirate.jpg" frameSize="10px" frameStyle="frame2" gridColStart={75} gridColEnd={85} gridRowStart={130} gridRowEnd={138}/> 
           <NameTag name={'Yannik'} fieldOfStudy={'Informatik Bachelor'} semesterNmbr={7} fontSizeTop={"130%"} fontSizeBottom={"50%"} gridColStart={74} gridColEnd={80} gridRowStart={135} gridRowEnd={139}/>
