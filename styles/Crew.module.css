@@ -12,6 +12,21 @@
     padding: 0px;
 }
 
+.nameTag {
+    background-image: url(/crew/sign.png);
+    word-wrap: break-word;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: rgb(245, 245, 245);
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
 @media only screen and (max-device-width: 480px) {
     .crewGrid {
     display: flow-root;
