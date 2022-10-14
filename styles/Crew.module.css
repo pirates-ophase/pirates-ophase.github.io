@@ -1,4 +1,4 @@
-.gridContainer {
+.crewGrid {
     display: grid;
     width: 85%;
     grid-auto-columns: 10px;
@@ -13,7 +13,7 @@
 }
 
 @media only screen and (max-device-width: 480px) {
-    .gridContainer {
+    .crewGrid {
     display: flow-root;
     width: 85%;
     }
