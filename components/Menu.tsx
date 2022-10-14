@@ -20,6 +20,9 @@ export const Menu = () => {
     }, [/* this side effect is not dependent on any props */]);
 
     return <nav className={styles.menu} ref={parallaxSceneRef}>
+        <div data-depth="-0.1" className={styles.background}>
+            <img src="/menu/background.jpg"/>
+        </div>
         <div data-depth="0.0" className={styles.wave}>
             <div />
         </div>

@@ -19,6 +19,15 @@
     pointer-events: auto;
 }
 
+.background > img {
+    position: relative;
+    top: -630px;
+    left: -20px;
+    width: 110%;
+    transform: scaleX(-1);
+    filter: saturate(0.5) brightness(0.7)
+}
+
 .frontWave > div {
     background-image: url('/menu/wave-paint.png');
     width: 150vw;
