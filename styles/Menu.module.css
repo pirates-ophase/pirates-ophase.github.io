@@ -11,12 +11,36 @@
     pointer-events: none;
 }
 
-.menu > [data-depth="0.3"] > * {
+.menuItem {
     position: relative;
     top: 15vh;
     left: calc(50vw - 50%);
     margin: 20px;
     pointer-events: auto;
+
+    text-shadow: 0 0 .1em black;
+    transition: text-shadow 0.5s;
+    color: #EEE;
+}
+
+.menuItem.active, .menuItem:hover {
+    text-shadow: 0 0 .1em white;
+}
+
+.menuItem:after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 1rem 0 1.5rem;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.menuItem.active:after, .menuItem:hover:after {
+    border-bottom: 3px solid white;
 }
 
 .background > img {

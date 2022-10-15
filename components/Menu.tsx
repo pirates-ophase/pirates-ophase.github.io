@@ -1,8 +1,19 @@
-import NextLink from 'next/link';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 import Parallax from 'parallax-js';
-import React, { useEffect, useRef } from 'react';
+import React, { ReactElement, useEffect, useRef } from 'react';
 import styles from '../styles/Menu.module.css'
+
+const MenuItem = ({ href, children }: {href: string, children: string}) => {
+    const active = useRouter().asPath === href;
+    const className = styles.menuItem + (active ? ` ${styles.active}` : '');
+    return (
+        <Link href={href}>
+            <a className={className}>{ children }</a>
+        </Link>
+    )
+}
 
 export const Menu = () => {
     const parallaxSceneRef = useRef<HTMLElement>(null);
@@ -30,10 +41,10 @@ export const Menu = () => {
             <div />
         </div>
         <div data-depth="0.3">
-            <NextLink href={'/'}>Home</NextLink>
-            <NextLink href={'/crew'}>Crew</NextLink>
-            <NextLink href={'/plan'}>Wochenplan</NextLink>
-            <NextLink href={'/log'}>Logbuch</NextLink>
+            <MenuItem href={'/'}>Home</MenuItem>
+            <MenuItem href={'/crew'}>Crew</MenuItem>
+            <MenuItem href={'/plan'}>Wochenplan</MenuItem>
+            <MenuItem href={'/log'}>Logbuch</MenuItem>
         </div>
         <div data-depth="0.4" className={styles.wave}>
             <div/>
