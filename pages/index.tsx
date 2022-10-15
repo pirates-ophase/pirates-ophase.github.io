@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import NextLink from 'next/link'
 import styles from '../styles/Home.module.css'
-import { PersonFrame } from '../components/PersonFrame'
+import { ImageFrame } from '../components/ImageFrame'
 import Layout from "../components/Layout";
 
 const Home: NextPage = () => {
@@ -19,7 +19,7 @@ const Home: NextPage = () => {
         </h1>
         
         <div className={styles.image}>
-          <PersonFrame
+          <ImageFrame
             src="/pirates.png"
             frameSize='4.5rem'
             frameStyle='frame2'

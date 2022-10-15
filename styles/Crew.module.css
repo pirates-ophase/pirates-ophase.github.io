@@ -1,6 +1,6 @@
-.crewGrid {
+.frameGrid {
     display: grid;
-    width: 85%;
+    width: 100%;
     grid-auto-columns: 10px;
     grid-auto-rows: 10px;
     grid-auto-flow: column;
