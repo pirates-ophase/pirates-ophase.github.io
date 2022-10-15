@@ -66,12 +66,20 @@
 }
 
 .wave > *, .frontWave > *, .ship > * {
-    animation-name: wave;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation: wave 7s linear infinite;
 }
 
+.ship {
+    animation: sway 10s ease-in-out infinite;
+}
+
+@keyframes sway {
+    from { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    to { transform: rotate(-5deg); }
+}
+
+/* https://www.useragentman.com/blog/2013/03/03/animating-circular-paths-using-css3-transitions/ */
 @keyframes wave {
     from { transform: rotate(0deg) translateX(20px) rotate(0deg); }
     to   { transform: rotate(360deg) translateX(20px) rotate(-360deg); }
