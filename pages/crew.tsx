@@ -106,8 +106,8 @@ const Home: NextPage = () => {
         <ImageFrame src="/crew/crewmates/mi.jpg" frameSize="46px" frameStyle="frame4" gridColStart={45} gridColEnd={62} gridRowStart={142} gridRowEnd={162}/>
         <NameTag name={'Mi'} fieldOfStudy={'Ehem. Bio'} semesterNmbr={0} fontSizeTop={"300%"} fontSizeBottom={"0%"} gridColStart={55} gridColEnd={62} gridRowStart={155} gridRowEnd={162}/>
 
-        <ImageFrame src="/crew/crewmates/moritz.jpg" frameSize="54px" frameStyle="frame5" gridColStart={30} gridColEnd={45} gridRowStart={143} gridRowEnd={156}/>
-        <NameTag name={'Moritz'} fieldOfStudy={'Ehem. Info'} semesterNmbr={0} fontSizeTop={"250%"} fontSizeBottom={"0%"} gridColStart={35} gridColEnd={45} gridRowStart={153} gridRowEnd={158}/>
+        <ImageFrame src="/crew/crewmates/moritz.jpg" frameSize="54px" frameStyle="frame5" gridColStart={30} gridColEnd={45} gridRowStart={143} gridRowEnd={160}/>
+        <NameTag name={'Moritz'} fieldOfStudy={'Ehem. Info'} semesterNmbr={0} fontSizeTop={"250%"} fontSizeBottom={"0%"} gridColStart={35} gridColEnd={45} gridRowStart={158} gridRowEnd={163}/>
 
         <ImageFrame src="/crew/crewmates/nala.jpg" frameSize="50px" frameStyle="frame6" gridColStart={50} gridColEnd={75} gridRowStart={40} gridRowEnd={65}/>
         <NameTag name={'Nala'} fieldOfStudy={'Angewandte Doggologie'} semesterNmbr={3} fontSizeTop={"260%"} fontSizeBottom={"110%"} gridColStart={60} gridColEnd={77} gridRowStart={57} gridRowEnd={65}/>
