@@ -2,7 +2,7 @@ import { getFontOverrideCss } from 'next/dist/server/font-utils';
 import { CSSProperties, HTMLAttributes, useEffect, useState } from 'react';
 import styles from '../styles/Crew.module.css'
 
-interface PersonFrameProps {
+interface ImageFrameProps {
     src: string;
     frameSize: string;
     frameStyle: string;
@@ -12,7 +12,7 @@ interface PersonFrameProps {
     gridRowEnd: number;
 }
 
-export const PersonFrame = (props: PersonFrameProps) => {
+export const ImageFrame = (props: ImageFrameProps) => {
     
     var frameImage: string = "";
     switch (props.frameStyle) {
