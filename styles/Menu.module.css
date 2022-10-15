@@ -65,6 +65,18 @@
     left: -25vw;
 }
 
+.wave > *, .frontWave > *, .ship > * {
+    animation-name: wave;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes wave {
+    from { transform: rotate(0deg) translateX(20px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(20px) rotate(-360deg); }
+}
+
 .wave > div {
     background-image: url('/menu/wave-plain.png');
     width: 150vw;
@@ -82,22 +94,27 @@
 
 .wave[data-depth="0.0"] > div {
     top: 20vh;
+    animation-delay: -1s;
 }
 
 .wave[data-depth="0.2"] > div {
     top: 25vh;
     left: -15vw;
+    animation-delay: -2s;
 }
 
 .wave[data-depth="0.4"] > div {
     top: 30vh;
+    animation-delay: -3s;
 }
 
 .wave[data-depth="0.6"] > div {
     top: 35vh;
     left: -15vw;
+    animation-delay: -4s;
 }
 
 .frontWave[data-depth="0.8"] > div {
     top: 40vh;
+    animation-delay: -5s;
 }
