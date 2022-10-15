@@ -139,7 +139,7 @@ const Home: NextPage = () => {
         <NameTag name={'Stefan'} fieldOfStudy={'Informatik Bachelor'} semesterNmbr={3} fontSizeTop={"130%"} fontSizeBottom={"50%"} gridColStart={25} gridColEnd={33} gridRowStart={140} gridRowEnd={145}/>
 
         <ImageFrame src="/crew/crewmates/stefan_zilober.jpg" frameSize="65px" frameStyle="frame2" gridColStart={1} gridColEnd={20} gridRowStart={140} gridRowEnd={157}/>  
-        <NameTag name={'Stefan'} fieldOfStudy={'Z10'} semesterNmbr={9} fontSizeTop={"150%"} fontSizeBottom={"60%"} gridColStart={5} gridColEnd={15} gridRowStart={154} gridRowEnd={158}/>
+        <NameTag name={'Stefan'} fieldOfStudy={'Physik Bachelor'} semesterNmbr={5} fontSizeTop={"150%"} fontSizeBottom={"60%"} gridColStart={5} gridColEnd={15} gridRowStart={154} gridRowEnd={158}/>
 
         <ImageFrame src="/crew/crewmates/ville.jpg" frameSize="10px" frameStyle="frame2" gridColStart={65} gridColEnd={70} gridRowStart={65} gridRowEnd={70}/>
         <NameTag name={'Ville'} fieldOfStudy={'Police Service Bachelor'} semesterNmbr={6} fontSizeTop={"130%"} fontSizeBottom={"50%"} gridColStart={68} gridColEnd={75} gridRowStart={66} gridRowEnd={70}/>
