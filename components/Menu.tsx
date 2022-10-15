@@ -60,5 +60,6 @@ export const Menu = () => {
         <div data-depth="0.8" className={styles.frontWave}>
             <div />
         </div>
+        <div data-depth="0.0" className={styles.transitionLayer} />
     </nav>
 };
