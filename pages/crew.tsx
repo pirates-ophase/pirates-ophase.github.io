@@ -63,11 +63,14 @@ const Home: NextPage = () => {
         <ImageFrame src="/crew/crewmates/dimi.jpg" frameSize="60px" frameStyle="frame5" gridColStart={64} gridColEnd={79} gridRowStart={93} gridRowEnd={108}/>
         <NameTag name={'Dimi'} fieldOfStudy={'Mathematik Bachelor'} semesterNmbr={11} fontSizeTop={"150%"} fontSizeBottom={"55%"} gridColStart={64} gridColEnd={74} gridRowStart={103} gridRowEnd={108}/>
 
+        <ImageFrame src="/crew/crewmates/ebru.jpg" frameSize="60px" frameStyle="frame5" gridColStart={74} gridColEnd={85} gridRowStart={20} gridRowEnd={32}/>
+        <NameTag name={'Ebru'} fieldOfStudy={'Informatik Bachelor'} semesterNmbr={5} fontSizeTop={"150%"} fontSizeBottom={"55%"} gridColStart={74} gridColEnd={81} gridRowStart={28} gridRowEnd={32}/>
+
         <ImageFrame src="/crew/crewmates/edwin.jpg" frameSize="35px" frameStyle="frame4" gridColStart={26} gridColEnd={34} gridRowStart={90} gridRowEnd={97}/>
         <NameTag name={'Edwin'} fieldOfStudy={'Informatik Master'} semesterNmbr={4} fontSizeTop={"110%"} fontSizeBottom={"50%"} gridColStart={30} gridColEnd={35} gridRowStart={94} gridRowEnd={98}/>
 
         <ImageFrame src="/crew/crewmates/gersti.jpg" frameSize="19px" frameStyle="frame2" gridColStart={2} gridColEnd={15} gridRowStart={2} gridRowEnd={15}/>
-        <NameTag name={'Gersti'} fieldOfStudy={'Informatik ??'} semesterNmbr={69} fontSizeTop={"150%"} fontSizeBottom={"55%"} gridColStart={2} gridColEnd={9} gridRowStart={10} gridRowEnd={15}/>
+        <NameTag name={'Gersti'} fieldOfStudy={'Informatik Bachelor'} semesterNmbr={11} fontSizeTop={"150%"} fontSizeBottom={"55%"} gridColStart={2} gridColEnd={9} gridRowStart={10} gridRowEnd={15}/>
 
         <ImageFrame src="/crew/crewmates/jannes.jpg" frameSize="35px" frameStyle="frame1" gridColStart={26} gridColEnd={39} gridRowStart={20} gridRowEnd={34}/>
         <NameTag name={'Jannes'} fieldOfStudy={'Informatik Bachelor'} semesterNmbr={7} fontSizeTop={"150%"} fontSizeBottom={"55%"} gridColStart={26} gridColEnd={33} gridRowStart={30} gridRowEnd={34}/>
