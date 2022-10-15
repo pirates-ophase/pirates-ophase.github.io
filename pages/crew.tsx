@@ -63,11 +63,14 @@ const Home: NextPage = () => {
         <ImageFrame src="/crew/crewmates/dimi.jpg" frameSize="60px" frameStyle="frame5" gridColStart={64} gridColEnd={79} gridRowStart={93} gridRowEnd={108}/>
         <NameTag name={'Dimi'} fieldOfStudy={'Mathematik Bachelor'} semesterNmbr={11} fontSizeTop={"150%"} fontSizeBottom={"55%"} gridColStart={64} gridColEnd={74} gridRowStart={103} gridRowEnd={108}/>
 
+        <ImageFrame src="/crew/crewmates/ebru.jpg" frameSize="60px" frameStyle="frame5" gridColStart={74} gridColEnd={85} gridRowStart={20} gridRowEnd={32}/>
+        <NameTag name={'Ebru'} fieldOfStudy={'Informatik Bachelor'} semesterNmbr={5} fontSizeTop={"150%"} fontSizeBottom={"55%"} gridColStart={74} gridColEnd={81} gridRowStart={28} gridRowEnd={32}/>
+
         <ImageFrame src="/crew/crewmates/edwin.jpg" frameSize="35px" frameStyle="frame4" gridColStart={26} gridColEnd={34} gridRowStart={90} gridRowEnd={97}/>
-        <NameTag name={'Edwin'} fieldOfStudy={'Informatik Master'} semesterNmbr={4} fontSizeTop={"110%"} fontSizeBottom={"50%"} gridColStart={30} gridColEnd={35} gridRowStart={94} gridRowEnd={98}/>
+        <NameTag name={'Edwin'} fieldOfStudy={'Informatik Master'} semesterNmbr={4} fontSizeTop={"110%"} fontSizeBottom={"50%"} gridColStart={30} gridColEnd={36} gridRowStart={94} gridRowEnd={98}/>
 
         <ImageFrame src="/crew/crewmates/gersti.jpg" frameSize="19px" frameStyle="frame2" gridColStart={2} gridColEnd={15} gridRowStart={2} gridRowEnd={15}/>
-        <NameTag name={'Gersti'} fieldOfStudy={'Informatik ??'} semesterNmbr={69} fontSizeTop={"150%"} fontSizeBottom={"55%"} gridColStart={2} gridColEnd={9} gridRowStart={10} gridRowEnd={15}/>
+        <NameTag name={'Gersti'} fieldOfStudy={'Informatik Bachelor'} semesterNmbr={11} fontSizeTop={"150%"} fontSizeBottom={"55%"} gridColStart={2} gridColEnd={9} gridRowStart={10} gridRowEnd={15}/>
 
         <ImageFrame src="/crew/crewmates/jannes.jpg" frameSize="35px" frameStyle="frame1" gridColStart={26} gridColEnd={39} gridRowStart={20} gridRowEnd={34}/>
         <NameTag name={'Jannes'} fieldOfStudy={'Informatik Bachelor'} semesterNmbr={7} fontSizeTop={"150%"} fontSizeBottom={"55%"} gridColStart={26} gridColEnd={33} gridRowStart={30} gridRowEnd={34}/>
@@ -86,7 +89,7 @@ const Home: NextPage = () => {
         <NameTag name={'Julian'} fieldOfStudy={'Informatik Master'} semesterNmbr={4} fontSizeTop={"150%"} fontSizeBottom={"55%"} gridColStart={5} gridColEnd={17} gridRowStart={90} gridRowEnd={95}/>
 
         <ImageFrame src="/crew/crewmates/lisa.jpg" frameSize="15px" frameStyle="frame4" gridColStart={48} gridColEnd={55} gridRowStart={66} gridRowEnd={74}/>
-        <NameTag name={'Lisa'} fieldOfStudy={'Informatik Master'} semesterNmbr={2} fontSizeTop={"150%"} fontSizeBottom={"55%"} gridColStart={52} gridColEnd={56} gridRowStart={70} gridRowEnd={74}/>
+        <NameTag name={'Lisa'} fieldOfStudy={'Informatik Master'} semesterNmbr={2} fontSizeTop={"150%"} fontSizeBottom={"55%"} gridColStart={51} gridColEnd={58} gridRowStart={70} gridRowEnd={74}/>
 
         <ImageFrame src="/crew/crewmates/luc.jpg" frameSize="20px" frameStyle="frame3" gridColStart={75} gridColEnd={85} gridRowStart={110} gridRowEnd={125}/>
         <NameTag name={'LUC'} fieldOfStudy={'Informatik Bachelor'} semesterNmbr={3} fontSizeTop={"150%"} fontSizeBottom={"50%"} gridColStart={75} gridColEnd={81} gridRowStart={120} gridRowEnd={125}/>
@@ -103,11 +106,11 @@ const Home: NextPage = () => {
         <ImageFrame src="/crew/crewmates/mi.jpg" frameSize="46px" frameStyle="frame4" gridColStart={45} gridColEnd={62} gridRowStart={142} gridRowEnd={162}/>
         <NameTag name={'Mi'} fieldOfStudy={'Ehem. Bio'} semesterNmbr={0} fontSizeTop={"300%"} fontSizeBottom={"0%"} gridColStart={55} gridColEnd={62} gridRowStart={155} gridRowEnd={162}/>
 
-        <ImageFrame src="/crew/crewmates/moritz.jpg" frameSize="54px" frameStyle="frame5" gridColStart={30} gridColEnd={45} gridRowStart={143} gridRowEnd={156}/>
-        <NameTag name={'Moritz'} fieldOfStudy={'Ehem. Info'} semesterNmbr={0} fontSizeTop={"250%"} fontSizeBottom={"0%"} gridColStart={35} gridColEnd={45} gridRowStart={153} gridRowEnd={158}/>
+        <ImageFrame src="/crew/crewmates/moritz.jpg" frameSize="54px" frameStyle="frame5" gridColStart={30} gridColEnd={45} gridRowStart={143} gridRowEnd={160}/>
+        <NameTag name={'Moritz'} fieldOfStudy={'Ehem. Info'} semesterNmbr={0} fontSizeTop={"250%"} fontSizeBottom={"0%"} gridColStart={35} gridColEnd={45} gridRowStart={158} gridRowEnd={163}/>
 
         <ImageFrame src="/crew/crewmates/nala.jpg" frameSize="50px" frameStyle="frame6" gridColStart={50} gridColEnd={75} gridRowStart={40} gridRowEnd={65}/>
-        <NameTag name={'Nala'} fieldOfStudy={'Angewandte Doggologie'} semesterNmbr={3} fontSizeTop={"260%"} fontSizeBottom={"110%"} gridColStart={60} gridColEnd={75} gridRowStart={59} gridRowEnd={65}/>
+        <NameTag name={'Nala'} fieldOfStudy={'Angewandte Doggologie'} semesterNmbr={3} fontSizeTop={"260%"} fontSizeBottom={"110%"} gridColStart={60} gridColEnd={77} gridRowStart={57} gridRowEnd={65}/>
 
         <ImageFrame src="/crew/crewmates/pablo.jpg" frameSize="55px" frameStyle="frame4" gridColStart={3} gridColEnd={25} gridRowStart={22} gridRowEnd={43}/>
         <NameTag name={'Pablo'} fieldOfStudy={'Informatik Bachelor'} semesterNmbr={3} fontSizeTop={"220%"} fontSizeBottom={"90%"} gridColStart={1} gridColEnd={12} gridRowStart={19} gridRowEnd={28}/>
@@ -133,15 +136,13 @@ const Home: NextPage = () => {
         <NameTag name={'Simon'} fieldOfStudy={'Technomathematik Bachelor'} semesterNmbr={7} fontSizeTop={"130%"} fontSizeBottom={"60%"} gridColStart={42} gridColEnd={49} gridRowStart={60} gridRowEnd={65}/>
 
         <ImageFrame src="/crew/crewmates/stefan_lehmann.jpg" frameSize="25px" frameStyle="frame3" gridColStart={20} gridColEnd={30} gridRowStart={142} gridRowEnd={152}/>
+        <NameTag name={'Stefan'} fieldOfStudy={'Informatik Bachelor'} semesterNmbr={3} fontSizeTop={"130%"} fontSizeBottom={"50%"} gridColStart={25} gridColEnd={33} gridRowStart={140} gridRowEnd={145}/>
 
         <ImageFrame src="/crew/crewmates/stefan_zilober.jpg" frameSize="65px" frameStyle="frame2" gridColStart={1} gridColEnd={20} gridRowStart={140} gridRowEnd={157}/>  
-        <NameTag name={'Stefan'} fieldOfStudy={'Z10'} semesterNmbr={9} fontSizeTop={"150%"} fontSizeBottom={"60%"} gridColStart={5} gridColEnd={15} gridRowStart={154} gridRowEnd={158}/>
-
-        
-        <NameTag name={'Stefan'} fieldOfStudy={'Informatik Bachelor'} semesterNmbr={3} fontSizeTop={"130%"} fontSizeBottom={"50%"} gridColStart={17} gridColEnd={23} gridRowStart={146} gridRowEnd={152}/>
+        <NameTag name={'Stefan'} fieldOfStudy={'Physik Bachelor'} semesterNmbr={5} fontSizeTop={"150%"} fontSizeBottom={"60%"} gridColStart={5} gridColEnd={15} gridRowStart={154} gridRowEnd={158}/>
 
         <ImageFrame src="/crew/crewmates/ville.jpg" frameSize="10px" frameStyle="frame2" gridColStart={65} gridColEnd={70} gridRowStart={65} gridRowEnd={70}/>
-        <NameTag name={'Ville'} fieldOfStudy={'Police Service Bachelor'} semesterNmbr={6} fontSizeTop={"130%"} fontSizeBottom={"50%"} gridColStart={68} gridColEnd={72} gridRowStart={66} gridRowEnd={70}/>
+        <NameTag name={'Ville'} fieldOfStudy={'Police Service Bachelor'} semesterNmbr={6} fontSizeTop={"130%"} fontSizeBottom={"50%"} gridColStart={68} gridColEnd={75} gridRowStart={66} gridRowEnd={70}/>
         
         <ImageFrame src="/crew/crewmates/pirate.jpg" frameSize="10px" frameStyle="frame2" gridColStart={75} gridColEnd={85} gridRowStart={130} gridRowEnd={138}/> 
         <NameTag name={'Yannik'} fieldOfStudy={'Informatik Bachelor'} semesterNmbr={7} fontSizeTop={"130%"} fontSizeBottom={"50%"} gridColStart={74} gridColEnd={80} gridRowStart={135} gridRowEnd={139}/>
