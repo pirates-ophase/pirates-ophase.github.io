@@ -40,12 +40,6 @@ export const Menu = () => {
         <div data-depth="0.2" className={styles.wave}>
             <div />
         </div>
-        <div data-depth="0.3">
-            <MenuItem href={'/'}>Home</MenuItem>
-            <MenuItem href={'/crew'}>Crew</MenuItem>
-            <MenuItem href={'/schedule'}>Wochenplan</MenuItem>
-            <MenuItem href={'/log'}>Logbuch</MenuItem>
-        </div>
         <div data-depth="0.4" className={styles.wave}>
             <div/>
         </div>
@@ -53,6 +47,12 @@ export const Menu = () => {
             <img
                 src="/menu/pirateShip_wood.png"
                 alt="Pirate ship drawn on a pice of wood"/>
+        </div>
+        <div data-depth="0.5">
+            <MenuItem href={'/'}>Home</MenuItem>
+            <MenuItem href={'/crew'}>Crew</MenuItem>
+            <MenuItem href={'/plan'}>Wochenplan</MenuItem>
+            <MenuItem href={'/log'}>Logbuch</MenuItem>
         </div>
         <div data-depth="0.6" className={styles.wave}>
             <div />

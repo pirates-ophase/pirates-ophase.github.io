@@ -23,6 +23,19 @@
     color: #EEE;
 }
 
+@media only screen and (max-device-width: 480px) {
+    .menuItem {
+        top: 5vh;
+        display: flow-root;
+        width: 85%;
+        text-align: center;
+    }
+
+    .ship {
+        filter: brightness(0.5)
+    }
+}
+
 .menuItem.active, .menuItem:hover {
     text-shadow: 0 0 .1em white;
 }
