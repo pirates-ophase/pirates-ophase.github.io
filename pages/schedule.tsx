@@ -29,7 +29,7 @@ const Schedule: NextPage = () => {
   return (
     <Layout>
       <Head>
-        <title>Crew</title>
+        <title>Wochenplan</title>
         <meta name="description" content="An Bord Matrosen!" />
       </Head>
 
