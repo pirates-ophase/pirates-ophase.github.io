@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import NextLink from 'next/link'
 import styles from '../styles/Home.module.css'
+import stylesCrew from '../styles/Crew.module.css'
 import { ImageFrame } from '../components/ImageFrame'
 import Layout from "../components/Layout";
 
@@ -18,14 +19,14 @@ const Home: NextPage = () => {
           Ahoy Matrosen!
         </h1>
         
-        <div className={styles.image}>
+        <div className={stylesCrew.frameGrid}>
           <ImageFrame
             src="/pirates.png"
             frameSize='4.5rem'
-            frameStyle='frame2'
-            gridColEnd={1}
+            frameStyle='frame6'
+            gridColEnd={41}
             gridColStart={1}
-            gridRowEnd={1}
+            gridRowEnd={23}
             gridRowStart={1}/>
         </div>
 
