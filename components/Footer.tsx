@@ -9,7 +9,7 @@ export const Footer = () => {
         <ul>
           <li className={styles.island}><NextLink href="/">Home &rarr;</NextLink></li>
           <li className={styles.skull}><NextLink href="/crew">Crew &rarr;</NextLink></li>
-          <li className={styles.flag}><NextLink href="/plan">Wochenplan &rarr;</NextLink></li>
+          <li className={styles.flag}><NextLink href="/schedule">Wochenplan &rarr;</NextLink></li>
           <li className={styles.parrot}><NextLink href="/log">Logbuch &rarr;</NextLink></li>
         </ul>
       </div>
