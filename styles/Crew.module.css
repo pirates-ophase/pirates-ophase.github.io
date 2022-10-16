@@ -1,11 +1,13 @@
-.frameGrid {
-    display: grid;
-    width: 100%;
-    grid-auto-columns: 10px;
-    grid-auto-rows: 10px;
-    grid-auto-flow: column;
-    column-gap: 10px;
-    row-gap: 15px;
+@media only screen and (min-device-width: 480px) {
+    .frameGrid {
+        display: grid;
+        width: 100%;
+        grid-auto-columns: 10px;
+        grid-auto-rows: 10px;
+        grid-auto-flow: column;
+        column-gap: 10px;
+        row-gap: 15px;
+    }
 }
 
 .gridItemFrame {
