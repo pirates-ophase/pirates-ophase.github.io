@@ -19,7 +19,7 @@ const Home: NextPage = () => {
           Ahoy Matrosen!
         </h1>
         
-        <div className={stylesCrew.crewGrid}>
+        <div className={stylesCrew.frameGrid}>
           <ImageFrame
             src="/pirates.png"
             frameSize='4.5rem'
