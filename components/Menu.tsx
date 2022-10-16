@@ -51,7 +51,7 @@ export const Menu = () => {
         <div data-depth="0.5">
             <MenuItem href={'/'}>Home</MenuItem>
             <MenuItem href={'/crew'}>Crew</MenuItem>
-            <MenuItem href={'/plan'}>Wochenplan</MenuItem>
+            <MenuItem href={'/schedule'}>Wochenplan</MenuItem>
             <MenuItem href={'/log'}>Logbuch</MenuItem>
         </div>
         <div data-depth="0.6" className={styles.wave}>
