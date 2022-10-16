@@ -26,10 +26,3 @@
     font-weight: bold;
     padding-right: 1rem;
 }
-
-@media only screen and (max-device-width: 480px) {
-    .crewGrid {
-    display: flow-root;
-    width: 85%;
-    }
-}
