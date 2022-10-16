@@ -5,6 +5,8 @@ import styles from '../styles/Home.module.css'
 import stylesCrew from '../styles/Crew.module.css'
 import { ImageFrame } from '../components/ImageFrame'
 import Layout from "../components/Layout";
+import Image from "next/image";
+import crewImage from '../public/pirates.png';
 
 const Home: NextPage = () => {
   return (
@@ -19,7 +21,7 @@ const Home: NextPage = () => {
           Ahoy Matrosen!
         </h1>
         
-        <div className={stylesCrew.frameGrid}>
+        <div className={`${stylesCrew.frameGrid} ${styles.onlyDesktop}`}>
           <ImageFrame
             src="/pirates.png"
             frameSize='4.5rem'
@@ -28,6 +30,9 @@ const Home: NextPage = () => {
             gridColStart={1}
             gridRowEnd={23}
             gridRowStart={1}/>
+        </div>
+        <div className={styles.onlyMobile}>
+          <Image src={crewImage} />
         </div>
 
         <p className={styles.description}>
