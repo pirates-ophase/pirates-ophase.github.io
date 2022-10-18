@@ -31,13 +31,13 @@ export const Footer = () => {
         </ul>
       </div>
 
-      <div style={{gridRowStart: 2, gridColumnStart: 1}}>
+      <div>
         <NextLink href="https://www.andrena.de/"><img src='/sponsoring/andrena.png' width={150}/></NextLink>
       </div>
-      <div style={{gridRowStart: 2, gridColumnStart: 2}}>
+      <div>
         <NextLink href="https://www.badische-backstub.de/"><img src='/sponsoring/badischeBackstub.png' width={170}/></NextLink>
       </div>
-      <div style={{gridRowStart: 2, gridColumnStart: 3}}>
+      <div>
         <NextLink href="https://www.volksbank-pur.de"><img src='/sponsoring/volksbankKarlsruhe.png' width={220}/></NextLink>
       </div>
     </footer>
