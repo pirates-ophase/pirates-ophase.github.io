@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: /crew/crewmates/
+Disallow: /log/
+
+Sitemap: https://pirates-ophase.de/sitemap.xml
