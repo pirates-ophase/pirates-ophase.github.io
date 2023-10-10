@@ -23,12 +23,12 @@ const Home: NextPage = () => {
         
         <div className={`${stylesCrew.frameGrid} ${styles.onlyDesktop}`}>
           <ImageFrame
-            src="/pirates.png"
+            src="/pirates2023.png"
             frameSize='4.5rem'
             frameStyle='frame6'
-            gridColEnd={41}
+            gridColEnd={45}
             gridColStart={1}
-            gridRowEnd={23}
+            gridRowEnd={24}
             gridRowStart={1}/>
         </div>
         <div className={styles.onlyMobile}>
@@ -36,7 +36,7 @@ const Home: NextPage = () => {
         </div>
 
         <p className={styles.description}>
-          Wir sind die Pirates, die beste&trade; der dreizehn O-Phasengruppen
+          Wir sind die Pirates, die beste&trade; der elf O-Phasengruppen
           für Mathe- und Informatikstudenten am KIT.
           Mit uns erwartet euch eine aufregende Woche, nach der ihr garantiert
           bereit seid, die Uni zu entern.
@@ -62,7 +62,7 @@ const Home: NextPage = () => {
 
         <ul className={styles.description}>
           <li><a href="https://www.instagram.com/kit_pirates/">Instagrrrram &rarr;</a></li>
-          <li><NextLink href="/schedule">Wochenplan 2022 &rarr;</NextLink></li>
+          <li><NextLink href="/schedule">Wochenplan 2023 &rarr;</NextLink></li>
           <li><a href="https://o-phase.com">Allgemeine O-Phasen Infos der Fachschaft &rarr;</a></li>
         </ul>
       </section>
