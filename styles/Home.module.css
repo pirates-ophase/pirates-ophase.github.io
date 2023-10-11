@@ -96,6 +96,13 @@
   font-size: 1.5rem;
 }
 
+.centeredDescription {
+  margin: 4rem 0;
+  line-height: 1.8;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
 .code {
   background: #fafafa;
   border-radius: 5px;
