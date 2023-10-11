@@ -20,6 +20,18 @@ const Home: NextPage = () => {
       </h1>
 
       <div style={{maxWidth: '100%', overflowY: 'auto', overflowX: 'scroll', textAlign: 'center'}}>
+      <p className={styles.description}>
+          O-Phase 2022
+        </p>
+        <div className={stylesCrew.frameGrid}>
+          <ImageFrame src="/log/2022/1.jpg" frameSize="50px" frameStyle="frame5" gridColStart={19} gridColEnd={50} gridRowStart={22} gridRowEnd={55}/>
+          <ImageFrame src="/log/2022/2.jpg" frameSize="60px" frameStyle="frame2" gridColStart={52} gridColEnd={85} gridRowStart={30} gridRowEnd={55}/>
+          <ImageFrame src="/log/2022/3.jpg" frameSize="40px" frameStyle="frame4" gridColStart={51} gridColEnd={86} gridRowStart={4} gridRowEnd={29}/>
+          <ImageFrame src="/log/2022/4.jpg" frameSize="70px" frameStyle="frame1" gridColStart={17} gridColEnd={50} gridRowStart={1} gridRowEnd={22}/>
+          <ImageFrame src="/log/2022/5.jpg" frameSize="40px" frameStyle="frame4" gridColStart={51} gridColEnd={86} gridRowStart={58} gridRowEnd={81}/>
+          <ImageFrame src="/log/2022/6.jpg" frameSize="60px" frameStyle="frame2" gridColStart={12} gridColEnd={47} gridRowStart={57} gridRowEnd={82}/>
+        </div>
+        
         <p className={styles.description}>
           O-Phase 2021
         </p>
