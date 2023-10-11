@@ -6,9 +6,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url('/bg_texture_dark.png') repeat;
+  background: url('/bg_texture_notQuiteAsDark.png') repeat;
   background-size: 500px;
-  box-shadow: black 0 -100px 60rem 200px inset,
+  box-shadow: black 0 -100px 50rem 200px inset,
     inset 0px 5rem 10rem 0 #000000;
   max-width: 100%;
 }
