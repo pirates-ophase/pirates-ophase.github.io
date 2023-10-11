@@ -3,7 +3,7 @@ import styles from '../styles/Crew.module.css'
 interface NameTagProps {
     name: string;
     fieldOfStudy: string;
-    semesterNmbr: number;
+    semesterNmbr: number|string;
     fontSizeTop: string;
     fontSizeBottom: string;
     gridColStart: number;
