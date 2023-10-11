@@ -103,12 +103,15 @@
   text-align: center;
 }
 
+<<<<<<< HEAD
 .disclaimer {
   margin: 4rem 0;
   line-height: 1.0;
   font-size: 1.0rem;
 }
 
+=======
+>>>>>>> ac7221c (added imprint)
 .code {
   background: #fafafa;
   border-radius: 5px;
