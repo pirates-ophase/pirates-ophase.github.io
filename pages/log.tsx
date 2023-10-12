@@ -96,7 +96,7 @@ const Home: NextPage = () => {
           O-Phase 2016
         </p>
         <div className={stylesCrew.frameGrid}>
-          <ImageFrame src="/log/mid_res/2016/1.jpg" frameSize="95px" frameStyle="frame5" gridColStart={15} gridColEnd={85} gridRowStart={1} gridRowEnd={50}/>
+          <ImageFrame src="/log/original_res/2016/1.jpg" frameSize="95px" frameStyle="frame5" gridColStart={15} gridColEnd={85} gridRowStart={1} gridRowEnd={50}/>
         </div>
 
 
@@ -104,7 +104,7 @@ const Home: NextPage = () => {
           O-Phase 2015
         </p>
         <div className={stylesCrew.frameGrid}>
-          <ImageFrame src="/log/mid_res/2015/1.jpg" frameSize="95px" frameStyle="frame6" gridColStart={15} gridColEnd={85} gridRowStart={1} gridRowEnd={50}/>
+          <ImageFrame src="/log/original_res/2015/1.jpg" frameSize="95px" frameStyle="frame6" gridColStart={15} gridColEnd={85} gridRowStart={1} gridRowEnd={50}/>
         </div>
 
           
