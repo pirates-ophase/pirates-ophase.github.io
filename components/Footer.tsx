@@ -25,7 +25,7 @@ export const Footer = () => {
       
       <div>
         <ul>
-          <li className={styles.flag}>Pirates, 2022</li>
+          <li className={styles.flag}>Pirates, 2023</li>
           <li>&nbsp;</li>
           <li>An Land gezogen von Max und Philipp</li> 
         </ul>
