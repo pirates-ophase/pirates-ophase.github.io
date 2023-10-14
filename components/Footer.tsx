@@ -38,6 +38,10 @@ export const Footer = () => {
       <div>
         <NextLink href="https://www.badische-backstub.de/"><img src='/sponsoring/badischeBackstub.png' width={170}/></NextLink>
       </div>
+
+      <div>
+        <NextLink href="https://www.billy-boy.de/"><img src='/sponsoring/billyboy.png' width={220}/></NextLink>
+      </div>
     </footer>
   );
 };
