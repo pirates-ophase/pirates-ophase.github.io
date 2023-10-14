@@ -103,15 +103,17 @@
   text-align: center;
 }
 
-<<<<<<< HEAD
 .disclaimer {
   margin: 4rem 0;
   line-height: 1.0;
   font-size: 1.0rem;
 }
 
+<<<<<<< HEAD
 =======
 >>>>>>> ac7221c (added imprint)
+=======
+>>>>>>> 50d7a7a (merge disclaimer style)
 .code {
   background: #fafafa;
   border-radius: 5px;
