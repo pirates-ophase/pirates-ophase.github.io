@@ -11,6 +11,7 @@ export const Footer = () => {
           <li className={styles.skull}><NextLink href="/crew">Crew &rarr;</NextLink></li>
           <li className={styles.flag}><NextLink href="/schedule">Wochenplan &rarr;</NextLink></li>
           <li className={styles.parrot}><NextLink href="/log">Logbuch &rarr;</NextLink></li>
+          <li className={styles.parrot}><NextLink href="/imprint">Impressum &rarr;</NextLink></li>
         </ul>
       </div>
 
@@ -25,7 +26,7 @@ export const Footer = () => {
       
       <div>
         <ul>
-          <li className={styles.flag}>Pirates, 2022</li>
+          <li className={styles.flag}>Pirates, 2023</li>
           <li>&nbsp;</li>
           <li>An Land gezogen von Max und Philipp</li> 
         </ul>
@@ -34,11 +35,14 @@ export const Footer = () => {
       <div>
         <NextLink href="https://www.andrena.de/"><img src='/sponsoring/andrena.png' width={150}/></NextLink>
       </div>
+      
+      
       <div>
         <NextLink href="https://www.badische-backstub.de/"><img src='/sponsoring/badischeBackstub.png' width={170}/></NextLink>
       </div>
+
       <div>
-        <NextLink href="https://www.volksbank-pur.de"><img src='/sponsoring/volksbankKarlsruhe.png' width={220}/></NextLink>
+        <NextLink href="https://www.billy-boy.de/"><img src='/sponsoring/billyboy.png' width={220}/></NextLink>
       </div>
     </footer>
   );
