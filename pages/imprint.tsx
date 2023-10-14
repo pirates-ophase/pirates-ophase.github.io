@@ -46,7 +46,7 @@ const Home: NextPage = () => {
         <p>&nbsp;</p>
 
         <p className={styles.disclaimer}>
-        Mit Urteil vom 12. Mai 1998 - 312 O 85/98 - 'Haftung für Links' hat das Landgericht (LG) Hamburg entschieden, dass man durch das Setzen eines Links, die Inhalte der gelinkten Seite ggf. mit zu verantworten hat. Dies kann - so das LG - nur dadurch verhindert werden, dass man sich ausdrücklich von diesen Inhalten distanziert. Hiermit distanzieren wir uns ausdrücklich von den verlinkten Seiten.
+        Mit Urteil vom 12. Mai 1998 - 312 O 85/98 - &apos;Haftung für Links&apos; hat das Landgericht (LG) Hamburg entschieden, dass man durch das Setzen eines Links, die Inhalte der gelinkten Seite ggf. mit zu verantworten hat. Dies kann - so das LG - nur dadurch verhindert werden, dass man sich ausdrücklich von diesen Inhalten distanziert. Hiermit distanzieren wir uns ausdrücklich von den verlinkten Seiten.
         </p>
       </section>
     </Layout>
