@@ -11,6 +11,7 @@ export const Footer = () => {
           <li className={styles.skull}><NextLink href="/crew">Crew &rarr;</NextLink></li>
           <li className={styles.flag}><NextLink href="/schedule">Wochenplan &rarr;</NextLink></li>
           <li className={styles.parrot}><NextLink href="/log">Logbuch &rarr;</NextLink></li>
+          <li className={styles.parrot}><NextLink href="/imprint">Impressum &rarr;</NextLink></li>
         </ul>
       </div>
 
