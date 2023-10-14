@@ -152,7 +152,7 @@ const Home: NextPage = () => {
           <NameTag name={'Maurice'} fieldOfStudy={'Informatik Bachelor'} semesterNmbr={7} fontSizeTop={"130%"} fontSizeBottom={"50%"} gridColStart={79} gridColEnd={85} gridRowStart={16} gridRowEnd={19}/>
 
           <ImageFrame src="/crew/crewmates_mid_res/tom.jpg" frameSize="60px" frameStyle="frame3" gridColStart={49} gridColEnd={68} gridRowStart={40} gridRowEnd={62}/> 
-          <NameTag name={'Tom'} fieldOfStudy={'Mathematik Bachelor'} semesterNmbr={14} fontSizeTop={"130%"} fontSizeBottom={"50%"} gridColStart={60} gridColEnd={68} gridRowStart={57} gridRowEnd={62}/>
+          <NameTag name={'Tom'} fieldOfStudy={'Mathematik Master'} semesterNmbr={5} fontSizeTop={"130%"} fontSizeBottom={"50%"} gridColStart={60} gridColEnd={68} gridRowStart={57} gridRowEnd={62}/>
 
         </div>
       </div>
