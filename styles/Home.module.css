@@ -103,6 +103,12 @@
   text-align: center;
 }
 
+.disclaimer {
+  margin: 4rem 0;
+  line-height: 1.0;
+  font-size: 1.0rem;
+}
+
 .code {
   background: #fafafa;
   border-radius: 5px;
