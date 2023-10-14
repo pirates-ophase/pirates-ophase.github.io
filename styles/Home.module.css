@@ -107,7 +107,9 @@
   margin: 4rem 0;
   line-height: 1.0;
   font-size: 1.0rem;
+  text-align: center;
 }
+
 
 .code {
   background: #fafafa;

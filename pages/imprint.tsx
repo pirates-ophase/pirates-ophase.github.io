@@ -29,13 +29,13 @@ const Home: NextPage = () => {
           <a href="mailto:hsg@asta-kit.de?subject=Pirates O-Phasengruppe">hsg@asta-kit.edu</a>
         </p>
 
-        <p className={styles.description}>
+        <p className={styles.centeredDescription}>
           Wir freuen uns auch dieses Jahr wieder von unseren 
           Sponsoren mit Nahrung, Goodies und finanziellen Mitteln versorgt worden zu sein.
           Vielen Dank dafür an <NextLink href="https://www.andrena.de/">Andrena Objects</NextLink>, <NextLink href="https://www.billy-boy.de/">Billy Boy</NextLink> und die <NextLink href="https://www.badische-backstub.de/">Badische Backstub</NextLink>.
         </p>
 
-        <p className={styles.description}>
+        <p className={styles.centeredDescription}>
           Vielen Dank auch an <NextLink href="https://www.linkedin.com/in/julie-elena-beck/">Julie Beck</NextLink> für unser diesjähriges Logo.
         </p>
 
