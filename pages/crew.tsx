@@ -26,7 +26,7 @@ const Home: NextPage = () => {
       <div style={{maxWidth: '100%', overflowY: 'auto', overflowX: 'scroll'}}>
         <div className={stylesCrew.frameGrid}>
           <ImageFrame src="/crew/crewmates_mid_res/pablo2.jpg" frameSize="90px" frameStyle="frame2" gridColStart={40} gridColEnd={74} gridRowStart={1} gridRowEnd={36}/>
-          <NameTag name={'Käpt\'n Pablo'} fieldOfStudy={'Informatik Bachelor'} semesterNmbr={7} fontSizeTop={"300%"} fontSizeBottom={"100%"} gridColStart={42} gridColEnd={60} gridRowStart={30} gridRowEnd={38}/>
+          <NameTag name={'Käpt\'n Pablo'} fieldOfStudy={'Informatik Bachelor'} semesterNmbr={5} fontSizeTop={"300%"} fontSizeBottom={"100%"} gridColStart={42} gridColEnd={60} gridRowStart={30} gridRowEnd={38}/>
 
           <ImageFrame src="/crew/crewmates_mid_res/zoe.jpg" frameSize="30px" frameStyle="frame3" gridColStart={23} gridColEnd={35} gridRowStart={46} gridRowEnd={58}/>
           <NameTag name={'Zoe'} fieldOfStudy={'Informatik Bachelor'} semesterNmbr={9} fontSizeTop={"170%"} fontSizeBottom={"58%"} gridColStart={23} gridColEnd={32} gridRowStart={55} gridRowEnd={60}/>
