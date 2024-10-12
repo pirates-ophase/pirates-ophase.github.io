@@ -33,7 +33,7 @@ const Home: NextPage = () => {
         <p className={styles.centeredDescription}>
           Wir freuen uns auch dieses Jahr wieder von unseren 
           Sponsoren mit Nahrung, Goodies und finanziellen Mitteln versorgt worden zu sein.
-          Vielen Dank dafür an <NextLink href="https://www.andrena.de/">Andrena Objects</NextLink>, <NextLink href="https://www.billy-boy.de/">Billy Boy</NextLink> und die <NextLink href="https://www.badische-backstub.de/">Badische Backstub</NextLink>.
+          Vielen Dank dafür an <NextLink href="https://www.andrena.de/">Andrena Objects</NextLink> und die <NextLink href="https://www.badische-backstub.de/">Badische Backstub</NextLink>.
         </p>
 
         <p className={styles.centeredDescription}>
