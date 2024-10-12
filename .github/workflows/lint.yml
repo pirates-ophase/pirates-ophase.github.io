@@ -13,7 +13,7 @@ jobs:
         fetch-depth: 0 # speeds up the checkout
 
     - name: Set up pnpm (package manager)
-      uses: pnpm/action-setup@v2.2.2
+      uses: pnpm/action-setup@v4.0.0
 
     - name: Install dependencies
       run: pnpm install
