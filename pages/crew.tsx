@@ -58,11 +58,8 @@ const Home: NextPage = () => {
           <ImageFrame src="/crew/crewmates_mid_res/dimi.jpg" frameSize="60px" frameStyle="frame5" gridColStart={64} gridColEnd={79} gridRowStart={93} gridRowEnd={108}/>
           <NameTag name={'Dimi'} fieldOfStudy={'Mathematik Bachelor'} semesterNmbr={13} fontSizeTop={"150%"} fontSizeBottom={"55%"} gridColStart={64} gridColEnd={74} gridRowStart={103} gridRowEnd={108}/>
 
-          <ImageFrame src="/crew/crewmates_mid_res/pirate.jpg" frameSize="60px" frameStyle="frame5" gridColStart={74} gridColEnd={85} gridRowStart={23} gridRowEnd={32}/>
-          <NameTag name={'Ebru'} fieldOfStudy={'Informatik Bachelor'} semesterNmbr={7} fontSizeTop={"150%"} fontSizeBottom={"55%"} gridColStart={74} gridColEnd={81} gridRowStart={28} gridRowEnd={32}/>
-
-          <ImageFrame src="/crew/crewmates_mid_res/edwin.jpg" frameSize="35px" frameStyle="frame4" gridColStart={26} gridColEnd={34} gridRowStart={90} gridRowEnd={97}/>
-          <NameTag name={'Edwin'} fieldOfStudy={'Informatik Master'} semesterNmbr={6} fontSizeTop={"110%"} fontSizeBottom={"50%"} gridColStart={30} gridColEnd={36} gridRowStart={94} gridRowEnd={98}/>
+          <ImageFrame src="/crew/crewmates_mid_res/edwin.jpg" frameSize="60px" frameStyle="frame5" gridColStart={74} gridColEnd={85} gridRowStart={23} gridRowEnd={32}/>
+          <NameTag name={'Edwin'} fieldOfStudy={'Informatik Master'} semesterNmbr={6} fontSizeTop={"150%"} fontSizeBottom={"55%"} gridColStart={74} gridColEnd={81} gridRowStart={28} gridRowEnd={32}/>
 
           <ImageFrame src="/crew/crewmates_mid_res/jannes.jpg" frameSize="35px" frameStyle="frame1" gridColStart={26} gridColEnd={39} gridRowStart={20} gridRowEnd={44}/>
           <NameTag name={'Jannes'} fieldOfStudy={'Informatik Bachelor'} semesterNmbr={"(6+2i)"} fontSizeTop={"150%"} fontSizeBottom={"55%"} gridColStart={26} gridColEnd={33} gridRowStart={30} gridRowEnd={34}/>
