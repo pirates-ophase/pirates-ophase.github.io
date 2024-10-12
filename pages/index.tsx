@@ -23,7 +23,7 @@ const Home: NextPage = () => {
         
         <div className={`${stylesCrew.frameGrid} ${styles.onlyDesktop}`}>
           <ImageFrame
-            src="/pirates2024.png"
+            src="/pirates2023.png"
             frameSize='4.5rem'
             frameStyle='frame6'
             gridColEnd={45}
