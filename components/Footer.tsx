@@ -26,7 +26,7 @@ export const Footer = () => {
       
       <div>
         <ul>
-          <li className={styles.flag}>Pirates, 2023</li>
+          <li className={styles.flag}>Pirates, 2024</li>
           <li>&nbsp;</li>
           <li>An Land gezogen von Max und Philipp</li> 
         </ul>
@@ -41,9 +41,6 @@ export const Footer = () => {
         <NextLink href="https://www.badische-backstub.de/"><img src='/sponsoring/badischeBackstub.png' width={170}/></NextLink>
       </div>
 
-      <div>
-        <NextLink href="https://www.billy-boy.de/"><img src='/sponsoring/billyboy.png' width={220}/></NextLink>
-      </div>
     </footer>
   );
 };
