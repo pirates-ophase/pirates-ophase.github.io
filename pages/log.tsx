@@ -21,6 +21,21 @@ const Home: NextPage = () => {
 
       <div style={{maxWidth: '100%', overflowY: 'auto', overflowX: 'scroll', textAlign: 'center'}}>
       <p className={styles.description}>
+          O-Phase 2023
+        </p>
+        <div className={stylesCrew.frameGrid}>
+          <ImageFrame src="/log/mid_res/2023/1.jpg" frameSize="50px" frameStyle="frame5" gridColStart={19} gridColEnd={45} gridRowStart={22} gridRowEnd={55}/>
+          <ImageFrame src="/log/mid_res/2023/2.jpg" frameSize="60px" frameStyle="frame2" gridColStart={47} gridColEnd={73} gridRowStart={24} gridRowEnd={55}/>
+          <ImageFrame src="/log/mid_res/2023/3.jpg" frameSize="40px" frameStyle="frame4" gridColStart={51} gridColEnd={86} gridRowStart={4} gridRowEnd={23}/>
+          <ImageFrame src="/log/mid_res/2023/4.jpg" frameSize="70px" frameStyle="frame1" gridColStart={17} gridColEnd={45} gridRowStart={1} gridRowEnd={22}/>
+          <ImageFrame src="/log/mid_res/2023/5.jpg" frameSize="40px" frameStyle="frame4" gridColStart={51} gridColEnd={86} gridRowStart={58} gridRowEnd={86}/>
+          <ImageFrame src="/log/mid_res/2023/6.jpg" frameSize="60px" frameStyle="frame2" gridColStart={24} gridColEnd={47} gridRowStart={57} gridRowEnd={82}/>
+          <ImageFrame src="/log/mid_res/2023/7.jpg" frameSize="70px" frameStyle="frame1" gridColStart={15} gridColEnd={43} gridRowStart={88} gridRowEnd={125}/>
+          <ImageFrame src="/log/mid_res/2023/8.jpg" frameSize="40px" frameStyle="frame5" gridColStart={70} gridColEnd={94} gridRowStart={88} gridRowEnd={116}/>
+          <ImageFrame src="/log/mid_res/2023/9.jpg" frameSize="60px" frameStyle="frame3" gridColStart={44} gridColEnd={68} gridRowStart={87} gridRowEnd={112}/>
+        </div>
+
+      <p className={styles.description}>
           O-Phase 2022
         </p>
         <div className={stylesCrew.frameGrid}>
