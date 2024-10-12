@@ -149,7 +149,7 @@ const Home: NextPage = () => {
           <NameTag name={'Leonie'} fieldOfStudy={'Informatik Bachelor'} semesterNmbr={9} fontSizeTop={"130%"} fontSizeBottom={"50%"} gridColStart={79} gridColEnd={85} gridRowStart={16} gridRowEnd={19}/>
 
           <ImageFrame src="/crew/crewmates_mid_res/tom.jpg" frameSize="60px" frameStyle="frame3" gridColStart={49} gridColEnd={68} gridRowStart={40} gridRowEnd={62}/> 
-          <NameTag name={'Tom'} fieldOfStudy={'Mathematik Master'} semesterNmbr={7} fontSizeTop={"130%"} fontSizeBottom={"50%"} gridColStart={60} gridColEnd={68} gridRowStart={57} gridRowEnd={62}/>
+          <NameTag name={'Tom'} fieldOfStudy={'Mathematik PhD'} semesterNmbr={1} fontSizeTop={"130%"} fontSizeBottom={"50%"} gridColStart={60} gridColEnd={68} gridRowStart={57} gridRowEnd={62}/>
 
           <ImageFrame src="/crew/crewmates_mid_res/eileen.jpg" frameSize="46px" frameStyle="frame4" gridColStart={1} gridColEnd={16} gridRowStart={158} gridRowEnd={172}/>
           <NameTag name={'Eileen'} fieldOfStudy={'Informatik Bachelor'} semesterNmbr={5} fontSizeTop={"200%"} fontSizeBottom={"65%"} gridColStart={5} gridColEnd={15} gridRowStart={168} gridRowEnd={175}/>
