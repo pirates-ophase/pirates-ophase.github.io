@@ -36,10 +36,6 @@ const Home: NextPage = () => {
           Vielen Dank dafür an <NextLink href="https://www.andrena.de/">Andrena Objects</NextLink> und die <NextLink href="https://www.badische-backstub.de/">Badische Backstub</NextLink>.
         </p>
 
-        <p className={styles.centeredDescription}>
-          Vielen Dank auch an <NextLink href="https://www.linkedin.com/in/julie-elena-beck/">Julie Beck</NextLink> für unser diesjähriges Logo.
-        </p>
-
         <p>&nbsp;</p>
         <p>&nbsp;</p>
         <p>&nbsp;</p>
