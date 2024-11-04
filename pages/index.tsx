@@ -14,6 +14,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Pirates - Ahoy!</title>
         <meta name="description" content="Pirates O-Phasengruppe - Ahoy!" />
+        <meta name="darkreader-lock">
       </Head>
 
       <section className={styles.content}>
