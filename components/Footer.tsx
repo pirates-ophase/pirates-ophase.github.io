@@ -1,4 +1,5 @@
 import NextLink from 'next/link';
+import Image from 'next/image';
 import styles from '../styles/Footer.module.css';
 
 export const Footer = () => {
@@ -33,16 +34,16 @@ export const Footer = () => {
       </div>
 
       <div>
-        <NextLink href="https://www.andrena.de/"><img src='/sponsoring/andrena.png' width={150}/></NextLink>
+        <NextLink href="https://codewerk.de/"><Image src='/sponsoring/codewerk.png' width={150} height={75} alt="Codewerk Logo"/></NextLink>
       </div>
 
       <div>
-        <NextLink href="https://metaphacts.com/"><img src='/sponsoring/metaphacts.png' width={170}/></NextLink>
+        <NextLink href="https://argutia.org/"><Image src='/sponsoring/luis.jpeg' width={170} height={85} alt="Argutia Logo"/></NextLink>
       </div>
       
       
       <div>
-        <NextLink href="https://www.badische-backstub.de/"><img src='/sponsoring/badischeBackstub.png' width={170}/></NextLink>
+        <NextLink href="https://pcschmiede.de/"><Image src='/sponsoring/pcschmiede.svg' width={170} height={85} alt="PC Schmiede Logo"/></NextLink>
       </div>
 
       

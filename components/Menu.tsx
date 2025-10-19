@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { useRouter } from 'next/router';
 
 import Parallax from 'parallax-js';
@@ -32,7 +33,7 @@ export const Menu = () => {
 
     return <nav className={styles.menu} ref={parallaxSceneRef}>
         <div data-depth="-0.1" className={styles.background}>
-            <img src="/menu/background.jpg"/>
+            <Image src="/menu/background.jpg" alt="Menu background" fill style={{objectFit: 'cover'}}/>
         </div>
         <div data-depth="0.0" className={styles.wave}>
             <div />
@@ -44,9 +45,13 @@ export const Menu = () => {
             <div/>
         </div>
         <div data-depth="0.5" className={styles.ship}>
-            <img
+            <Image
                 src="/menu/pirateShip_wood.png"
-                alt="Pirate ship drawn on a pice of wood"/>
+                alt="Pirate ship drawn on a piece of wood"
+                width={300}
+                height={200}
+                style={{objectFit: 'contain'}}
+            />
         </div>
         <div data-depth="0.5">
             <MenuItem href={'/'}>Home</MenuItem>

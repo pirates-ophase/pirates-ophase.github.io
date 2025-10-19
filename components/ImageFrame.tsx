@@ -1,5 +1,5 @@
-import { getFontOverrideCss } from 'next/dist/server/font-utils';
 import { CSSProperties, HTMLAttributes, useEffect, useState } from 'react';
+import Image from 'next/image';
 import styles from '../styles/Crew.module.css'
 
 interface ImageFrameProps {
@@ -37,7 +37,7 @@ export const ImageFrame = (props: ImageFrameProps) => {
     useEffect(() => {
         let mql = window.matchMedia('(max-width: 480px)');
         setMobile(mql.matches);
-    });
+    }, []);
     
     if (mobile) {
         return <div className={styles.gridItemFrame} 
@@ -45,7 +45,7 @@ export const ImageFrame = (props: ImageFrameProps) => {
             borderImage: frameImage,
             width: '100%',
             height: '100%'}}>
-            <img src={props.src} style={{width: '100%', height: '100%'}}/>
+            <Image src={props.src} alt="Crew member" fill style={{objectFit: 'cover'}}/>
         </div>
     } else {
         return <div className={styles.gridItemFrame} 
@@ -57,7 +57,7 @@ export const ImageFrame = (props: ImageFrameProps) => {
             gridRowEnd: props.gridRowEnd,
             width: '100%',
             height: '100%'}}>
-            <img src={props.src} style={{width: '100%', height: '100%'}}/>
+            <Image src={props.src} alt="Crew member" fill style={{objectFit: 'cover'}}/>
         </div>
     }
 

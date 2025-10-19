@@ -32,7 +32,7 @@ const Home: NextPage = () => {
             gridRowStart={1}/>
         </div>
         <div className={styles.onlyMobile}>
-          <Image src={crewImage} />
+          <Image src={crewImage} alt="Pirates Crew" />
         </div>
 
         <p className={styles.description}>
@@ -62,7 +62,7 @@ const Home: NextPage = () => {
 
         <ul className={styles.description}>
           <li><a href="https://www.instagram.com/kit_pirates/">Instagrrrram &rarr;</a></li>
-          <li><NextLink href="/schedule">Wochenplan 2024 &rarr;</NextLink></li>
+          <li><NextLink href="/schedule">Wochenplan 2025 &rarr;</NextLink></li>
           <li><a href="https://o-phase.com">Allgemeine O-Phasen Infos der Fachschaft &rarr;</a></li>
         </ul>
       </section>
