@@ -21,7 +21,7 @@ const Home: NextPage = () => {
           Ahoy Matrosen!
         </h1>
         
-        <div className={`${stylesCrew.frameGrid} ${styles.onlyDesktop}`}>
+        <div className={`${stylesCrew.frameGrid}`}>
           <ImageFrame
             src="/pirates2023.png"
             frameSize='4.5rem'
@@ -30,9 +30,6 @@ const Home: NextPage = () => {
             gridColStart={1}
             gridRowEnd={24}
             gridRowStart={1}/>
-        </div>
-        <div className={styles.onlyMobile}>
-          <Image src={crewImage} alt="Pirates Crew" />
         </div>
 
         <p className={styles.description}>
