@@ -33,7 +33,7 @@ const Home: NextPage = () => {
         <p className={styles.centeredDescription}>
           Wir freuen uns auch dieses Jahr wieder von unseren 
           Sponsoren mit Nahrung, Goodies und finanziellen Mitteln versorgt worden zu sein.
-          Vielen Dank dafür an <NextLink href="https://codewerk.de/">Codewerk</NextLink>, <NextLink href="https://argutia.org/">Luis von Argutia</NextLink> und <NextLink href="https://pcschmiede.de/">PC Schmiede</NextLink>.
+          Vielen Dank dafür an <a href="https://codewerk.de/">Codewerk</a>, <a href="https://argutia.org/">Luis von Argutia</a> und <a href="https://pcschmiede.de/">PC Schmiede</a>.
         </p>
 
         <p>&nbsp;</p>

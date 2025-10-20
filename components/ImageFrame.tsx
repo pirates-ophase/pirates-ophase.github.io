@@ -44,9 +44,8 @@ export const ImageFrame = (props: ImageFrameProps) => {
         style={{border: frameSize,
             borderImage: frameImage,
             width: '100%',
-            height: '100%',
-            position: 'relative'}}>
-            <Image src={props.src} alt="Crew member" fill style={{objectFit: 'cover'}}/>
+            height: '100%'}}>
+            <img src={props.src} style={{width: '100%', height: '100%'}}/>
         </div>
     } else {
         return <div className={styles.gridItemFrame} 
@@ -57,9 +56,8 @@ export const ImageFrame = (props: ImageFrameProps) => {
             gridRowStart: props.gridRowStart, 
             gridRowEnd: props.gridRowEnd,
             width: '100%',
-            height: '100%',
-            position: 'relative'}}>
-            <Image src={props.src} alt="Crew member" fill style={{objectFit: 'cover'}}/>
+            height: '100%'}}>
+            <img src={props.src} style={{width: '100%', height: '100%'}}/>
         </div>
     }
 

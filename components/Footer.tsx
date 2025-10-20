@@ -19,9 +19,9 @@ export const Footer = () => {
       <div>
         Sonstige Links:
         <ul>
-          <li className={styles.student}><NextLink href="https://asta-kit.de">AStA &rarr;</NextLink></li>
-          <li className={styles.books}><NextLink href="https://kit.edu">KIT &rarr;</NextLink></li>
-          <li className={styles.council}><NextLink href="https://fsmi.uni-karlsruhe.de">Fachschaft &rarr;</NextLink></li>
+          <li className={styles.student}><a href="https://asta-kit.de">AStA &rarr;</a></li>
+          <li className={styles.books}><a href="https://kit.edu">KIT &rarr;</a></li>
+          <li className={styles.council}><a href="https://fsmi.uni-karlsruhe.de">Fachschaft &rarr;</a></li>
         </ul>
       </div>
       
@@ -34,22 +34,16 @@ export const Footer = () => {
       </div>
 
       <div>
-        <NextLink href="https://codewerk.de/">
-          <Image src='/sponsoring/codewerk.png' width={150} height={75} alt="Codewerk Logo"/>
-        </NextLink>
+        <a href="https://codewerk.de/"><Image src='/sponsoring/codewerk.png' width={150} height={75} alt="Codewerk Logo"/></a>
       </div>
 
       <div>
-        <NextLink href="https://argutia.org/">
-          <Image src='/sponsoring/luis.jpeg' width={170} height={85} alt="Argutia Logo"/>
-        </NextLink>
+        <a href="https://argutia.org/"><Image src='/sponsoring/luis.jpeg' width={170} height={85} alt="Argutia Logo"/></a>
       </div>
       
       
       <div>
-        <NextLink href="https://pcschmiede.de/">
-          <Image src='/sponsoring/pcschmiede.svg' width={170} height={85} alt="PC Schmiede Logo"/>
-        </NextLink>
+        <a href="https://pcschmiede.de/"><Image src='/sponsoring/pcschmiede.svg' width={170} height={85} alt="PC Schmiede Logo"/></a>
       </div>
 
       
