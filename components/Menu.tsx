@@ -10,8 +10,8 @@ const MenuItem = ({ href, children }: {href: string, children: string}) => {
     const active = useRouter().asPath === href;
     const className = styles.menuItem + (active ? ` ${styles.active}` : '');
     return (
-        <Link href={href}>
-            <a className={className}>{ children }</a>
+        <Link href={href} className={className}>
+            { children }
         </Link>
     )
 }
@@ -33,7 +33,7 @@ export const Menu = () => {
 
     return <nav className={styles.menu} ref={parallaxSceneRef}>
         <div data-depth="-0.1" className={styles.background}>
-            <Image src="/menu/background.jpg" alt="Menu background" fill style={{objectFit: 'cover'}}/>
+            <Image src="/menu/background.jpg" alt="Menu background" width={1200} height={800} style={{position: 'relative', top: '-630px', left: '-20px', width: '110%', transform: 'scaleX(-1)'}}/>
         </div>
         <div data-depth="0.0" className={styles.wave}>
             <div />

@@ -27,4 +27,6 @@
     color: rgb(245, 245, 245);
     font-weight: bold;
     padding-right: 1rem;
+    position: relative;
+    z-index: 10;
 }

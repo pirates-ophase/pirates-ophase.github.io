@@ -34,16 +34,22 @@ export const Footer = () => {
       </div>
 
       <div>
-        <NextLink href="https://codewerk.de/"><Image src='/sponsoring/codewerk.png' width={150} height={75} alt="Codewerk Logo"/></NextLink>
+        <NextLink href="https://codewerk.de/">
+          <Image src='/sponsoring/codewerk.png' width={150} height={75} alt="Codewerk Logo"/>
+        </NextLink>
       </div>
 
       <div>
-        <NextLink href="https://argutia.org/"><Image src='/sponsoring/luis.jpeg' width={170} height={85} alt="Argutia Logo"/></NextLink>
+        <NextLink href="https://argutia.org/">
+          <Image src='/sponsoring/luis.jpeg' width={170} height={85} alt="Argutia Logo"/>
+        </NextLink>
       </div>
       
       
       <div>
-        <NextLink href="https://pcschmiede.de/"><Image src='/sponsoring/pcschmiede.svg' width={170} height={85} alt="PC Schmiede Logo"/></NextLink>
+        <NextLink href="https://pcschmiede.de/">
+          <Image src='/sponsoring/pcschmiede.svg' width={170} height={85} alt="PC Schmiede Logo"/>
+        </NextLink>
       </div>
 
       
