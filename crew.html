@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/public/favicon.ico">
+  <title>Crew</title>
+  <meta name="description" content="An Bord Matrosen!">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="menu" id="parallax-menu">
+      <div data-depth="-0.1" class="background">
+        <img alt="Menu background" src="/public/menu/background.jpg">
+      </div>
+      <div data-depth="0.0" class="wave">
+        <div></div>
+      </div>
+      <div data-depth="0.2" class="wave">
+        <div></div>
+      </div>
+      <div data-depth="0.4" class="wave">
+        <div></div>
+      </div>
+      <div data-depth="0.5" class="ship">
+        <img alt="Pirate ship drawn on a piece of wood" src="/public/menu/pirateShip_wood.png">
+      </div>
+      <div data-depth="0.5">
+        <a class="menuItem" href="/">Home</a>
+        <a class="menuItem active" href="/crew.html">Crew</a>
+        <a class="menuItem" href="/schedule.html">Wochenplan</a>
+        <a class="menuItem" href="/log.html">Logbuch</a>
+        <a class="menuItem" href="/imprint.html">Impressum</a>
+      </div>
+      <div data-depth="0.6" class="wave">
+        <div></div>
+      </div>
+      <div data-depth="0.8" class="frontWave">
+        <div></div>
+      </div>
+      <div data-depth="0.0" class="transitionLayer"></div>
+    </nav>
+
+    <main class="main">
+      <section class="content">
+        <h1 class="title" style="grid-column-start:4;grid-row-start:4">Crew</h1>
+        <p class="description" style="grid-column-start:5;grid-column-end:20;grid-row-start:5">Käpt'n und Matrosen*Innen an Bord</p>
+      </section>
+      
+      <div style="max-width:100%;overflow-y:auto;overflow-x:scroll">
+        <div class="frameGrid" id="crew-grid">
+          <!-- Crew members will be populated by JavaScript -->
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div>
+        Piratige Links:
+        <ul>
+          <li><a href="/">Home →</a></li>
+          <li><a href="/crew.html">Crew →</a></li>
+          <li><a href="/schedule.html">Wochenplan →</a></li>
+          <li><a href="/log.html">Logbuch →</a></li>
+          <li><a href="/imprint.html">Impressum →</a></li>
+        </ul>
+      </div>
+
+      <div>
+        Sonstige Links:
+        <ul>
+          <li><a href="https://asta-kit.de">AStA →</a></li>
+          <li><a href="https://kit.edu">KIT →</a></li>
+          <li><a href="https://fsmi.uni-karlsruhe.de">Fachschaft →</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <ul>
+          <li>Pirates, 2024</li>
+          <li>&nbsp;</li>
+          <li>An Land gezogen von Max und Philipp</li> 
+        </ul>
+      </div>
+
+      <div>
+        <a href="https://codewerk.de/"><img src="/public/sponsoring/codewerk.png" width="150" height="75" alt="Codewerk Logo"></a>
+      </div>
+
+      <div>
+        <a href="https://argutia.org/"><img src="/public/sponsoring/luis.jpeg" width="170" height="85" alt="Argutia Logo"></a>
+      </div>
+      
+      <div>
+        <a href="https://pcschmiede.de/"><img src="/public/sponsoring/pcschmiede.svg" width="170" height="85" alt="PC Schmiede Logo"></a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/parallax-js@3.1.0/dist/parallax.min.js"></script>
+  <script>
+    // Initialize parallax
+    const parallaxScene = document.getElementById('parallax-menu');
+    if (parallaxScene) {
+      const parallax = new Parallax(parallaxScene, {
+        pointerEvents: true,
+      });
+    }
+
+    // Mobile detection
+    function isMobile() {
+      return window.matchMedia('(max-width: 480px)').matches;
+    }
+
+    // Crew data
+    const crewMembers = [
+      {name: "Käpt'n Joni", field: "Informatik Bachelor", semester: 3, image: "joni.jpg", frame: "frame2", size: "90px", gridColStart: 40, gridColEnd: 74, gridRowStart: 1, gridRowEnd: 36, nameGridColStart: 42, nameGridColEnd: 60, nameGridRowStart: 30, nameGridRowEnd: 38, fontSizeTop: "300%", fontSizeBottom: "100%"},
+      {name: "Chefkoch Pablo", field: "Informatik Bachelor", semester: 9, image: "pablo2.jpg", frame: "frame5", size: "46px", gridColStart: 23, gridColEnd: 38, gridRowStart: 1, gridRowEnd: 17, nameGridColStart: 24, nameGridColEnd: 32, nameGridRowStart: 13, nameGridRowEnd: 19, fontSizeTop: "200%", fontSizeBottom: "65%"},
+      {name: "Papagei Luis", field: "Informatik Bachelor", semester: 3, image: "luis.jpg", frame: "frame1", size: "46px", gridColStart: 27, gridColEnd: 39, gridRowStart: 18, gridRowEnd: 31, nameGridColStart: 27, nameGridColEnd: 38, nameGridRowStart: 28, nameGridRowEnd: 34, fontSizeTop: "200%", fontSizeBottom: "65%"},
+      {name: "Schatzmeister Christian", field: "Informatik Bachelor", semester: 11, image: "christian.jpg", frame: "frame3", size: "40px", gridColStart: 3, gridColEnd: 23, gridRowStart: 3, gridRowEnd: 22, nameGridColStart: 3, nameGridColEnd: 12, nameGridRowStart: 3, nameGridRowEnd: 8, fontSizeTop: "120%", fontSizeBottom: "55%"},
+      {name: "Zoë", field: "Informatik Bachelor", semester: 13, image: "zoe.jpg", frame: "frame3", size: "30px", gridColStart: 23, gridColEnd: 35, gridRowStart: 76, gridRowEnd: 88, nameGridColStart: 23, nameGridColEnd: 32, nameGridRowStart: 85, nameGridRowEnd: 90, fontSizeTop: "170%", fontSizeBottom: "58%"},
+      {name: "Tobi", field: "Informatik Master", semester: 7, image: "tobi.jpg", frame: "frame5", size: "35px", gridColStart: 24, gridColEnd: 36, gridRowStart: 129, gridRowEnd: 138, nameGridColStart: 24, nameGridColEnd: 33, nameGridRowStart: 135, nameGridRowEnd: 140, fontSizeTop: "130%", fontSizeBottom: "50%"},
+      {name: "Sarah", field: "Informatik Bachelor", semester: 13, image: "sarah.jpg", frame: "frame2", size: "10px", gridColStart: 55, gridColEnd: 71, gridRowStart: 37, gridRowEnd: 53, nameGridColStart: 54, nameGridColEnd: 60, nameGridRowStart: 45, nameGridRowEnd: 49, fontSizeTop: "130%", fontSizeBottom: "50%"},
+      {name: "Alex", field: "Informatik Master", semester: 6, image: "alex_sommer.jpg", frame: "frame3", size: "15px", gridColStart: 16, gridColEnd: 22, gridRowStart: 147, gridRowEnd: 153, nameGridColStart: 16, nameGridColEnd: 22, nameGridRowStart: 152, nameGridRowEnd: 155, fontSizeTop: "99%", fontSizeBottom: "50%"},
+      {name: "Benni", field: "Informatik Master", semester: 4, image: "benjamin.jpg", frame: "frame7", size: "30px", gridColStart: 39, gridColEnd: 54, gridRowStart: 104, gridRowEnd: 119, nameGridColStart: 42, nameGridColEnd: 54, nameGridRowStart: 115, nameGridRowEnd: 119, fontSizeTop: "110%", fontSizeBottom: "60%"},
+      {name: "Cedrico", field: "Informatik Master", semester: 6, image: "cedrico.jpg", frame: "frame3", size: "70px", gridColStart: 58, gridColEnd: 80, gridRowStart: 100, gridRowEnd: 120, nameGridColStart: 58, nameGridColEnd: 70, nameGridRowStart: 115, nameGridRowEnd: 120, fontSizeTop: "150%", fontSizeBottom: "60%"},
+      {name: "Dani", field: "Bürgergeld", semester: 3, image: "daniel.jpg", frame: "frame6", size: "25px", gridColStart: 50, gridColEnd: 63, gridRowStart: 120, gridRowEnd: 134, nameGridColStart: 57, nameGridColEnd: 64, nameGridRowStart: 126, nameGridRowEnd: 131, fontSizeTop: "160%", fontSizeBottom: "55%"},
+      {name: "Dimi", field: "Mathematik Master", semester: 6, image: "dimi.jpg", frame: "frame5", size: "60px", gridColStart: 64, gridColEnd: 79, gridRowStart: 123, gridRowEnd: 138, nameGridColStart: 64, nameGridColEnd: 74, nameGridRowStart: 133, nameGridRowEnd: 138, fontSizeTop: "150%", fontSizeBottom: "55%"},
+      {name: "Edwin", field: "Ehem. Info", semester: 0, image: "edwin.jpg", frame: "frame5", size: "60px", gridColStart: 72, gridColEnd: 83, gridRowStart: 52, gridRowEnd: 62, nameGridColStart: 74, nameGridColEnd: 81, nameGridRowStart: 58, nameGridRowEnd: 62, fontSizeTop: "150%", fontSizeBottom: "0%"},
+      {name: "Jannes", field: "Informatik Bachelor", semester: "(7+4i)", image: "jannes.jpg", frame: "frame1", size: "35px", gridColStart: 26, gridColEnd: 39, gridRowStart: 50, gridRowEnd: 74, nameGridColStart: 26, nameGridColEnd: 33, nameGridRowStart: 60, nameGridRowEnd: 64, fontSizeTop: "150%", fontSizeBottom: "55%"},
+      {name: "Jonas", field: "Informatik Master", semester: 9, image: "jonas.jpg", frame: "frame5", size: "30px", gridColStart: 1, gridColEnd: 10, gridRowStart: 73, gridRowEnd: 82, nameGridColStart: 1, nameGridColEnd: 10, nameGridRowStart: 73, nameGridRowEnd: 76, fontSizeTop: "150%", fontSizeBottom: "55%"},
+      {name: "Max", field: "Informatik Master", semester: 6, image: "joschka_max.jpg", frame: "frame6", size: "90px", gridColStart: 22, gridColEnd: 75, gridRowStart: 140, gridRowEnd: 172, nameGridColStart: 32, nameGridColEnd: 48, nameGridRowStart: 167, nameGridRowEnd: 173, fontSizeTop: "200%", fontSizeBottom: "100%"},
+      {name: "Joschka", field: "Informatik Master", semester: 5, image: "joschka_max.jpg", frame: "frame6", size: "90px", gridColStart: 22, gridColEnd: 75, gridRowStart: 140, gridRowEnd: 172, nameGridColStart: 52, nameGridColEnd: 70, nameGridRowStart: 167, nameGridRowEnd: 173, fontSizeTop: "200%", fontSizeBottom: "100%"},
+      {name: "Julian", field: "Mathematik PhD", semester: 5, image: "julian.jpg", frame: "frame2", size: "50px", gridColStart: 5, gridColEnd: 23, gridRowStart: 118, gridRowEnd: 140, nameGridColStart: 5, nameGridColEnd: 17, nameGridRowStart: 120, nameGridRowEnd: 125, fontSizeTop: "150%", fontSizeBottom: "55%"},
+      {name: "Kevin", field: "Informatik Bachelor", semester: 9, image: "kevin.jpg", frame: "frame4", size: "20px", gridColStart: 69, gridColEnd: 79, gridRowStart: 88, gridRowEnd: 96, nameGridColStart: 73, nameGridColEnd: 82, nameGridRowStart: 94, nameGridRowEnd: 98, fontSizeTop: "120%", fontSizeBottom: "55%"},
+      {name: "Lena", field: "Informatik Bachelor", semester: 13, image: "lena.jpg", frame: "frame4", size: "55px", gridColStart: 3, gridColEnd: 25, gridRowStart: 22, gridRowEnd: 43, nameGridColStart: 1, nameGridColEnd: 12, nameGridRowStart: 22, nameGridRowEnd: 28, fontSizeTop: "220%", fontSizeBottom: "90%"},
+      {name: "Lisa", field: "Informatik Master", semester: 5, image: "lisa.jpg", frame: "frame4", size: "15px", gridColStart: 48, gridColEnd: 58, gridRowStart: 93, gridRowEnd: 104, nameGridColStart: 51, nameGridColEnd: 58, nameGridRowStart: 100, nameGridRowEnd: 104, fontSizeTop: "150%", fontSizeBottom: "55%"},
+      {name: "LUC", field: "Wissenschaft-Medien-Kommunikation Bachelor", semester: 5, image: "luc.jpg", frame: "frame3", size: "20px", gridColStart: 75, gridColEnd: 85, gridRowStart: 140, gridRowEnd: 155, nameGridColStart: 75, nameGridColEnd: 81, nameGridRowStart: 150, nameGridRowEnd: 155, fontSizeTop: "150%", fontSizeBottom: "50%"},
+      {name: "Lea", field: "Informatik Master", semester: 9, image: "pirate.jpg", frame: "frame2", size: "25px", gridColStart: 68, gridColEnd: 85, gridRowStart: 72, gridRowEnd: 88, nameGridColStart: 77, nameGridColEnd: 85, nameGridRowStart: 82, nameGridRowEnd: 86, fontSizeTop: "150%", fontSizeBottom: "50%"},
+      {name: "Mi", field: "Ehem. Bio", semester: 0, image: "mi.jpg", frame: "frame7", size: "42px", gridColStart: 3, gridColEnd: 16, gridRowStart: 142, gridRowEnd: 155, nameGridColStart: 4, nameGridColEnd: 13, nameGridRowStart: 151, nameGridRowEnd: 155, fontSizeTop: "200%", fontSizeBottom: "0%"},
+      {name: "Mattis", field: "Informatik Master", semester: 6, image: "mattis.jpg", frame: "frame6", size: "70px", gridColStart: 64, gridColEnd: 78, gridRowStart: 173, gridRowEnd: 186, nameGridColStart: 70, nameGridColEnd: 83, nameGridRowStart: 182, nameGridRowEnd: 188, fontSizeTop: "200%", fontSizeBottom: "50%"},
+      {name: "Moritz", field: "Ehem. Info", semester: 0, image: "moritz.jpg", frame: "frame5", size: "54px", gridColStart: 30, gridColEnd: 57, gridRowStart: 173, gridRowEnd: 190, nameGridColStart: 35, nameGridColEnd: 45, nameGridRowStart: 188, nameGridRowEnd: 193, fontSizeTop: "250%", fontSizeBottom: "0%"},
+      {name: "Pascal", field: "Informatik Master", semester: 3, image: "pascal_rockenstiehl.jpg", frame: "frame2", size: "20px", gridColStart: 51, gridColEnd: 58, gridRowStart: 134, gridRowEnd: 140, nameGridColStart: 54, nameGridColEnd: 61, nameGridRowStart: 136, nameGridRowEnd: 140, fontSizeTop: "110%", fontSizeBottom: "60%"},
+      {name: "Paul", field: "Informatik Master", semester: 3, image: "paul.jpg", frame: "frame6", size: "20px", gridColStart: 23, gridColEnd: 40, gridRowStart: 36, gridRowEnd: 47, nameGridColStart: 30, nameGridColEnd: 40, nameGridRowStart: 32, nameGridRowEnd: 40, fontSizeTop: "200%", fontSizeBottom: "65%"},
+      {name: "Philipp", field: "Exil-Robotik", semester: 1, image: "philipp_max_algebra.jpg", frame: "frame1", size: "90px", gridColStart: 6, gridColEnd: 35, gridRowStart: 91, gridRowEnd: 115, nameGridColStart: 4, nameGridColEnd: 12, nameGridRowStart: 98, nameGridRowEnd: 106, fontSizeTop: "200%", fontSizeBottom: "70%"},
+      {name: "Max", field: "Informatik Master", semester: 3, image: "philipp_max_algebra.jpg", frame: "frame1", size: "90px", gridColStart: 6, gridColEnd: 35, gridRowStart: 91, gridRowEnd: 115, nameGridColStart: 27, nameGridColEnd: 35, nameGridRowStart: 99, nameGridRowEnd: 107, fontSizeTop: "200%", fontSizeBottom: "70%"},
+      {name: "Algebra", field: "Informatik Master (hoffentlich)", semester: 1, image: "philipp_max_algebra.jpg", frame: "frame1", size: "90px", gridColStart: 6, gridColEnd: 35, gridRowStart: 91, gridRowEnd: 115, nameGridColStart: 22, nameGridColEnd: 30, nameGridRowStart: 109, nameGridRowEnd: 117, fontSizeTop: "200%", fontSizeBottom: "70%"},
+      {name: "Simon", field: "Mathematik Bachelor", semester: 4, image: "simon_gurke.jpg", frame: "frame2", size: "50px", gridColStart: 10, gridColEnd: 23, gridRowStart: 75, gridRowEnd: 88, nameGridColStart: 16, nameGridColEnd: 23, nameGridRowStart: 85, nameGridRowEnd: 90, fontSizeTop: "170%", fontSizeBottom: "60%"},
+      {name: "Simon", field: "Technomathematik Master", semester: 5, image: "simon.jpg", frame: "frame2", size: "20px", gridColStart: 35, gridColEnd: 47, gridRowStart: 93, gridRowEnd: 104, nameGridColStart: 42, nameGridColEnd: 49, nameGridRowStart: 90, nameGridRowEnd: 95, fontSizeTop: "130%", fontSizeBottom: "60%"},
+      {name: "Stefan", field: "Informatik Bachelor", semester: 9, image: "stefan_lehmann.jpg", frame: "frame3", size: "25px", gridColStart: 20, gridColEnd: 30, gridRowStart: 172, gridRowEnd: 182, nameGridColStart: 25, nameGridColEnd: 33, nameGridRowStart: 170, nameGridRowEnd: 175, fontSizeTop: "130%", fontSizeBottom: "50%"},
+      {name: "Stefan", field: "Pfeffifee Bachelor", semester: 11, image: "stefan_zilober.jpg", frame: "frame2", size: "65px", gridColStart: 1, gridColEnd: 20, gridRowStart: 170, gridRowEnd: 187, nameGridColStart: 5, nameGridColEnd: 15, nameGridRowStart: 184, nameGridRowEnd: 188, fontSizeTop: "150%", fontSizeBottom: "60%"},
+      {name: "Ville", field: "Bolizei 🚓", semester: 0, image: "ville.jpg", frame: "frame2", size: "10px", gridColStart: 58, gridColEnd: 66, gridRowStart: 92, gridRowEnd: 100, nameGridColStart: 62, nameGridColEnd: 69, nameGridRowStart: 96, nameGridRowEnd: 100, fontSizeTop: "160%", fontSizeBottom: "0%"},
+      {name: "Yannic", field: "Informatik Bachelor", semester: 3, image: "yannic.jpg", frame: "frame2", size: "10px", gridColStart: 75, gridColEnd: 85, gridRowStart: 63, gridRowEnd: 72, nameGridColStart: 74, nameGridColEnd: 80, nameGridRowStart: 68, nameGridRowEnd: 72, fontSizeTop: "130%", fontSizeBottom: "50%"},
+      {name: "Anja", field: "Informatik Master", semester: 9, image: "anja.jpg", frame: "frame2", size: "10px", gridColStart: 75, gridColEnd: 85, gridRowStart: 160, gridRowEnd: 168, nameGridColStart: 74, nameGridColEnd: 80, nameGridRowStart: 165, nameGridRowEnd: 169, fontSizeTop: "130%", fontSizeBottom: "50%"},
+      {name: "David", field: "Informatik Master", semester: 8, image: "david_bogusch.jpg", frame: "frame5", size: "40px", gridColStart: 35, gridColEnd: 49, gridRowStart: 75, gridRowEnd: 90, nameGridColStart: 38, nameGridColEnd: 49, nameGridRowStart: 85, nameGridRowEnd: 90, fontSizeTop: "170%", fontSizeBottom: "60%"},
+      {name: "Jan", field: "Informatik Bachelor", semester: 13, image: "pirate.jpg", frame: "frame2", size: "10px", gridColStart: 75, gridColEnd: 85, gridRowStart: 160, gridRowEnd: 168, nameGridColStart: 74, nameGridColEnd: 80, nameGridRowStart: 165, nameGridRowEnd: 169, fontSizeTop: "130%", fontSizeBottom: "50%"},
+      {name: "Manuel", field: "Informatik PhD", semester: 1, image: "manuel.jpg", frame: "frame2", size: "20px", gridColStart: 75, gridColEnd: 85, gridRowStart: 156, gridRowEnd: 168, nameGridColStart: 74, nameGridColEnd: 80, nameGridRowStart: 165, nameGridRowEnd: 169, fontSizeTop: "130%", fontSizeBottom: "50%"},
+      {name: "Marco", field: "Ehem. Info", semester: 0, image: "marco.jpg", frame: "frame2", size: "25px", gridColStart: 36, gridColEnd: 50, gridRowStart: 123, gridRowEnd: 138, nameGridColStart: 36, nameGridColEnd: 43, nameGridRowStart: 126, nameGridRowEnd: 130, fontSizeTop: "130%", fontSizeBottom: "0%"},
+      {name: "Leonie", field: "Informatik Bachelor", semester: 11, image: "maurice.jpg", frame: "frame3", size: "20px", gridColStart: 74, gridColEnd: 84, gridRowStart: 33, gridRowEnd: 49, nameGridColStart: 79, nameGridColEnd: 85, nameGridRowStart: 46, nameGridRowEnd: 49, fontSizeTop: "130%", fontSizeBottom: "50%"},
+      {name: "Tom", field: "Mathematik PhD", semester: 3, image: "tom.jpg", frame: "frame3", size: "60px", gridColStart: 49, gridColEnd: 68, gridRowStart: 70, gridRowEnd: 92, nameGridColStart: 60, nameGridColEnd: 68, nameGridRowStart: 87, nameGridRowEnd: 92, fontSizeTop: "130%", fontSizeBottom: "50%"},
+      {name: "Eileen", field: "Informatik Bachelor", semester: 7, image: "eileen.jpg", frame: "frame4", size: "46px", gridColStart: 1, gridColEnd: 16, gridRowStart: 188, gridRowEnd: 202, nameGridColStart: 5, nameGridColEnd: 15, nameGridRowStart: 198, nameGridRowEnd: 205, fontSizeTop: "200%", fontSizeBottom: "65%"},
+      {name: "Finn", field: "Informatik Bachelor", semester: 7, image: "finn.jpg", frame: "frame4", size: "46px", gridColStart: 16, gridColEnd: 29, gridRowStart: 188, gridRowEnd: 202, nameGridColStart: 17, nameGridColEnd: 27, nameGridRowStart: 198, nameGridRowEnd: 205, fontSizeTop: "200%", fontSizeBottom: "65%"},
+      {name: "Pradi", field: "Informatik Master", semester: 5, image: "pradi.jpg", frame: "frame2", size: "46px", gridColStart: 74, gridColEnd: 88, gridRowStart: -2, gridRowEnd: 15, nameGridColStart: 82, nameGridColEnd: 90, nameGridRowStart: 10, nameGridRowEnd: 16, fontSizeTop: "200%", fontSizeBottom: "65%"},
+      {name: "Yanniko", field: "Informatik Bachelor", semester: 5, image: "yanniko.jpg", frame: "frame5", size: "46px", gridColStart: 79, gridColEnd: 90, gridRowStart: 170, gridRowEnd: 182, nameGridColStart: 80, nameGridColEnd: 90, nameGridRowStart: 179, nameGridRowEnd: 185, fontSizeTop: "200%", fontSizeBottom: "65%"},
+      {name: "Alex", field: "Informatik Master", semester: 3, image: "alexandra.jpg", frame: "frame4", size: "30px", gridColStart: 84, gridColEnd: 96, gridRowStart: 30, gridRowEnd: 45, nameGridColStart: 84, nameGridColEnd: 92, nameGridRowStart: 38, nameGridRowEnd: 42, fontSizeTop: "150%", fontSizeBottom: "55%"},
+      {name: "Thor", field: "Goldscheffeln", semester: 16, image: "thor.jpg", frame: "frame1", size: "60px", gridColStart: 25, gridColEnd: 45, gridRowStart: 270, gridRowEnd: 290, nameGridColStart: 25, nameGridColEnd: 38, nameGridRowStart: 285, nameGridRowEnd: 290, fontSizeTop: "200%", fontSizeBottom: "80%"},
+      {name: "David", field: "Informatik Bachelor", semester: 3, image: "david_hoefler.jpg", frame: "frame3", size: "30px", gridColStart: 80, gridColEnd: 95, gridRowStart: 90, gridRowEnd: 105, nameGridColStart: 80, nameGridColEnd: 90, nameGridRowStart: 98, nameGridRowEnd: 103, fontSizeTop: "150%", fontSizeBottom: "55%"},
+      {name: "Johanna", field: "Informatik Bachelor", semester: 3, image: "johanna.jpg", frame: "frame2", size: "35px", gridColStart: 74, gridColEnd: 89, gridRowStart: 15, gridRowEnd: 30, nameGridColStart: 76, nameGridColEnd: 87, nameGridRowStart: 25, nameGridRowEnd: 30, fontSizeTop: "150%", fontSizeBottom: "55%"},
+      {name: "Linus", field: "Informatik Bachelor", semester: 3, image: "linus.jpg", frame: "frame5", size: "25px", gridColStart: 7, gridColEnd: 22, gridRowStart: 43, gridRowEnd: 58, nameGridColStart: 2, nameGridColEnd: 8, nameGridRowStart: 51, nameGridRowEnd: 56, fontSizeTop: "140%", fontSizeBottom: "55%"},
+      {name: "Simon", field: "Informatik Bachelor", semester: 5, image: "simon_stockinger.jpg", frame: "frame6", size: "40px", gridColStart: 85, gridColEnd: 103, gridRowStart: 45, gridRowEnd: 63, nameGridColStart: 85, nameGridColEnd: 98, nameGridRowStart: 58, nameGridRowEnd: 63, fontSizeTop: "150%", fontSizeBottom: "55%"},
+      {name: "Jonathan", field: "Mathematik Bachelor", semester: 3, image: "jonathan.jpg", frame: "frame7", size: "30px", gridColStart: 39, gridColEnd: 54, gridRowStart: 53, gridRowEnd: 68, nameGridColStart: 39, nameGridColEnd: 49, nameGridRowStart: 63, nameGridRowEnd: 68, fontSizeTop: "150%", fontSizeBottom: "55%"},
+      {name: "Jan", field: "Informatik Bachelor", semester: 3, image: "jan_mansel.jpg", frame: "frame4", size: "35px", gridColStart: 54, gridColEnd: 69, gridRowStart: 53, gridRowEnd: 68, nameGridColStart: 56, nameGridColEnd: 67, nameGridRowStart: 63, nameGridRowEnd: 68, fontSizeTop: "150%", fontSizeBottom: "55%"},
+      {name: "Moritz", field: "Informatik Master", semester: 3, image: "moritz_leistner.jpg", frame: "frame3", size: "40px", gridColStart: 8, gridColEnd: 23, gridRowStart: 58, gridRowEnd: 75, nameGridColStart: 2, nameGridColEnd: 15, nameGridRowStart: 68, nameGridRowEnd: 73, fontSizeTop: "150%", fontSizeBottom: "55%"},
+      {name: "Christian", field: "Informatik Bachelor", semester: 3, image: "christian_schultheis.jpg", frame: "frame2", size: "35px", gridColStart: 40, gridColEnd: 55, gridRowStart: 38, gridRowEnd: 53, nameGridColStart: 42, nameGridColEnd: 53, nameGridRowStart: 48, nameGridRowEnd: 53, fontSizeTop: "150%", fontSizeBottom: "55%"}
+    ];
+
+    // Frame styles mapping
+    const frameStyles = {
+      "frame1": 'url(/public/crew/frames/frame1.png) 220 stretch',
+      "frame2": 'url(/public/crew/frames/frame2.png) 190 stretch',
+      "frame3": 'url(/public/crew/frames/frame3.png) 105 stretch',
+      "frame4": 'url(/public/crew/frames/frame4.png) 110 stretch',
+      "frame5": 'url(/public/crew/frames/frame5.png) 350 stretch',
+      "frame6": 'url(/public/crew/frames/frame6.png) 240 stretch',
+      "frame7": 'url(/public/crew/frames/frame7.png) 160 stretch'
+    };
+
+    // Render crew members
+    function renderCrew() {
+      const grid = document.getElementById('crew-grid');
+      const mobile = isMobile();
+      
+      crewMembers.forEach(member => {
+        // Image frame
+        const frameDiv = document.createElement('div');
+        frameDiv.className = 'gridItemFrame';
+        
+        const frameSize = member.size + ' solid transparent';
+        const frameImage = frameStyles[member.frame];
+        
+        if (mobile) {
+          frameDiv.style.cssText = `border: ${frameSize}; border-image: ${frameImage}; width: 100%; height: 100%;`;
+        } else {
+          frameDiv.style.cssText = `border: ${frameSize}; border-image: ${frameImage}; grid-column-start: ${member.gridColStart}; grid-column-end: ${member.gridColEnd}; grid-row-start: ${member.gridRowStart}; grid-row-end: ${member.gridRowEnd}; width: 100%; height: 100%;`;
+        }
+        
+        const img = document.createElement('img');
+        img.src = `/public/crew/crewmates_mid_res/${member.image}`;
+        img.style.cssText = 'width: 100%; height: 100%;';
+        frameDiv.appendChild(img);
+        grid.appendChild(frameDiv);
+        
+        // Name tag
+        const nameTagDiv = document.createElement('div');
+        nameTagDiv.className = 'nameTag';
+        nameTagDiv.title = `${member.name} : ${member.semester}. Semester ${member.field}`;
+        
+        if (!mobile) {
+          nameTagDiv.style.cssText = `grid-column-start: ${member.nameGridColStart}; grid-column-end: ${member.nameGridColEnd}; grid-row-start: ${member.nameGridRowStart}; grid-row-end: ${member.nameGridRowEnd};`;
+        }
+        
+        const span = document.createElement('span');
+        const nameP = document.createElement('p');
+        nameP.style.cssText = `font-size: ${member.fontSizeTop}; margin: 0;`;
+        nameP.textContent = member.name;
+        
+        const infoP = document.createElement('p');
+        infoP.style.cssText = `font-size: ${member.fontSizeBottom}; margin: 0;`;
+        infoP.textContent = `${member.semester}. Semester ${member.field}`;
+        
+        span.appendChild(nameP);
+        span.appendChild(infoP);
+        nameTagDiv.appendChild(span);
+        grid.appendChild(nameTagDiv);
+      });
+    }
+
+    // Initialize crew on load
+    window.addEventListener('load', renderCrew);
+  </script>
+</body>
+</html>

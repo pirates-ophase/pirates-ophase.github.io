@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/public/favicon.ico">
+  <title>Impressum</title>
+  <meta name="description" content="An Bord Matrosen!">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="menu" id="parallax-menu">
+      <div data-depth="-0.1" class="background">
+        <img alt="Menu background" src="/public/menu/background.jpg">
+      </div>
+      <div data-depth="0.0" class="wave">
+        <div></div>
+      </div>
+      <div data-depth="0.2" class="wave">
+        <div></div>
+      </div>
+      <div data-depth="0.4" class="wave">
+        <div></div>
+      </div>
+      <div data-depth="0.5" class="ship">
+        <img alt="Pirate ship drawn on a piece of wood" src="/public/menu/pirateShip_wood.png">
+      </div>
+      <div data-depth="0.5">
+        <a class="menuItem" href="/">Home</a>
+        <a class="menuItem" href="/crew.html">Crew</a>
+        <a class="menuItem" href="/schedule.html">Wochenplan</a>
+        <a class="menuItem" href="/log.html">Logbuch</a>
+        <a class="menuItem active" href="/imprint.html">Impressum</a>
+      </div>
+      <div data-depth="0.6" class="wave">
+        <div></div>
+      </div>
+      <div data-depth="0.8" class="frontWave">
+        <div></div>
+      </div>
+      <div data-depth="0.0" class="transitionLayer"></div>
+    </nav>
+
+    <main class="main">
+      <section class="content">
+        <h1 class="title">Impressum</h1>
+        <p class="description">
+          Diese Website wird von der Pirates O-Phasengruppe am Karlsruher Institut für Technologie (KIT) betrieben.
+        </p>
+        <p class="description">
+          Kontakt: Über die Fachschaft Mathematik und Informatik am KIT
+        </p>
+        <p class="description">
+          An Land gezogen von Max und Philipp
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        Piratige Links:
+        <ul>
+          <li><a href="/">Home →</a></li>
+          <li><a href="/crew.html">Crew →</a></li>
+          <li><a href="/schedule.html">Wochenplan →</a></li>
+          <li><a href="/log.html">Logbuch →</a></li>
+          <li><a href="/imprint.html">Impressum →</a></li>
+        </ul>
+      </div>
+
+      <div>
+        Sonstige Links:
+        <ul>
+          <li><a href="https://asta-kit.de">AStA →</a></li>
+          <li><a href="https://kit.edu">KIT →</a></li>
+          <li><a href="https://fsmi.uni-karlsruhe.de">Fachschaft →</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <ul>
+          <li>Pirates, 2024</li>
+          <li>&nbsp;</li>
+          <li>An Land gezogen von Max und Philipp</li> 
+        </ul>
+      </div>
+
+      <div>
+        <a href="https://codewerk.de/"><img src="/public/sponsoring/codewerk.png" width="150" height="75" alt="Codewerk Logo"></a>
+      </div>
+
+      <div>
+        <a href="https://argutia.org/"><img src="/public/sponsoring/luis.jpeg" width="170" height="85" alt="Argutia Logo"></a>
+      </div>
+      
+      <div>
+        <a href="https://pcschmiede.de/"><img src="/public/sponsoring/pcschmiede.svg" width="170" height="85" alt="PC Schmiede Logo"></a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/parallax-js@3.1.0/dist/parallax.min.js"></script>
+  <script>
+    // Initialize parallax
+    const parallaxScene = document.getElementById('parallax-menu');
+    if (parallaxScene) {
+      const parallax = new Parallax(parallaxScene, {
+        pointerEvents: true,
+      });
+    }
+  </script>
+</body>
+</html>
