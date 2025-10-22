@@ -1,7 +1,5 @@
 User-Agent: *
-Disallow: /crew/crewmates_original/
 Disallow: /crew/crewmates_mid_res
-Disallow: /crew/crewmates_low_res/
 Disallow: /log/original_res/
 Disallow: /log/mid_res/
 Disallow: /crew/
