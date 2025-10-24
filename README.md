@@ -1,59 +1,52 @@
-[![screenshot of the pirates website](.github/readme/screenshot-frontpage.jpg)](https://pirates-ophase.de)
+# Pirates O-Phase Website
 
-# pirates-ophase.de 🏴‍☠️
+Static HTML/CSS/JS website for the Pirates O-Phasengruppe at KIT.
 
-Yohoho!
-This repository contains the source code for the
-[Pirates website](https://pirates-ophase.de/).
-The website's main purpose is to inform freshmen about our student group and
-what we're doing with them in the o-week.
+## Structure
 
-## Tooling
-This website is built with [Next.js](https://nextjs.org/) (on top of
-[React](https://reactjs.org/)) and compiles to a bunch of HTML, JS, etc. files
-that are statically hosted on [GitHub Pages](https://pages.github.com/).
+- `index.html` - Homepage (5.4KB)
+- `crew.html` - Crew member showcase (25KB)
+- `schedule.html` - Weekly schedule (4.8KB)
+- `log.html` - Photo logbook (placeholder, 3.5KB)
+- `imprint.html` - Legal information (3.6KB)
+- `404.html` - Custom error page (1.1KB)
+- `styles.css` - Consolidated stylesheet (5.7KB)
+- `robots.txt` - SEO robots file
+- `sitemap.xml` - SEO sitemap
 
-We aim to use modern but stable tooling to simplify maintainability.
-Tools should be updated regularly but use stable / LTS releases if available.
+## Features
 
-The website is built and tested with
-* [Node.js 16](https://nodejs.org/) for compilation
-* [pnpm 7](https://pnpm.io/) for package management
-* [lots and lots of JS packages](./package.json)
+- Parallax menu animation using Parallax.js
+- Responsive design with mobile detection
+- Static crew member grid with frames and name tags
+- Schedule images
+- Sponsoring links
+- Font optimization with `font-display: swap`
+- Image loading optimization
+- SEO-friendly structure
 
-## Development setup
-Make sure [node 16](https://nodejs.org/) and
-[pnpm 7](https://pnpm.io/installation) are installed.
+## Dependencies
 
-First, install all dependencies using
-```sh
-pnpm install
-```
+- Parallax.js (loaded from CDN)
+- Custom CSS with pirate theme
+- Font: "Pieces of Eight"
 
-You can start a local development server (with live preview etc.) with
-```sh
-pnpm dev
-```
+## Performance
 
-Before committing, please make sure that the site can be built using
-```sh
-pnpm build
-```
-
-## Further resources
-* Although most of the content is new or has been revised, much of the content
-  (especially images!) have been copied from
-  [the old Jekyll-based site](https://github.com/pirates-ophase/old-website) 
-* The visual style of our website is heavily inspired by the amazingly beautiful
-  [demo site](https://matthew.wagerfield.com/parallax/) from parallax JS.
-  Some of our assets were also copied from there
+- Total HTML/CSS/JS: ~52KB
+- Images: ~10MB (crew photos, schedule images, etc.)
+- Much lighter than the previous Next.js setup (~500KB+ bundle)
+- Optimized font loading
+- Lazy loading for non-critical images
 
 ## Deployment
-The `main` branch is automatically deployed to our production website, see
-[`.github/workflows/deploy-main.yml`](.github/workflows/deploy-main.yml) for
-further details.
 
-The `develop` branch is automatically deployed to
-[pirates.maxschweik.art](https://pirates.maxschweik.art), see
-[`.github/workflows/deploy-develop.yml`](.github/workflows/deploy-develop.yml) for
-further details.
+Simply upload all files to a web server. No build process required.
+
+## SEO Features
+
+- Semantic HTML structure
+- Meta tags and descriptions
+- Custom 404 page
+- Robots.txt and sitemap.xml
+- Theme color for mobile browsers

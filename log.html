@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/public/favicon.ico">
+  <title>Logbuch</title>
+  <meta name="description" content="Es war einmal...">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="menu" id="parallax-menu">
+      <div data-depth="-0.1" class="background">
+        <img alt="Menu background" src="/public/menu/background.jpg">
+      </div>
+      <div data-depth="0.0" class="wave">
+        <div></div>
+      </div>
+      <div data-depth="0.2" class="wave">
+        <div></div>
+      </div>
+      <div data-depth="0.4" class="wave">
+        <div></div>
+      </div>
+      <div data-depth="0.5" class="ship">
+        <img alt="Pirate ship drawn on a piece of wood" src="/public/menu/pirateShip_wood.png">
+      </div>
+      <div data-depth="0.5">
+        <a class="menuItem" href="/">Home</a>
+        <a class="menuItem" href="/crew.html">Crew</a>
+        <a class="menuItem" href="/schedule.html">Wochenplan</a>
+        <a class="menuItem active" href="/log.html">Logbuch</a>
+        <a class="menuItem" href="/imprint.html">Impressum</a>
+      </div>
+      <div data-depth="0.6" class="wave">
+        <div></div>
+      </div>
+      <div data-depth="0.8" class="frontWave">
+        <div></div>
+      </div>
+      <div data-depth="0.0" class="transitionLayer"></div>
+    </nav>
+
+    <main class="main">
+      <h1 class="title">Logbuch</h1>
+
+      <div style="max-width:100%;overflow-y:auto;overflow-x:scroll;text-align:center">
+        <p class="description">O-Phase 2023</p>
+        <div class="frameGrid" id="log-grid-2023">
+          <!-- 2023 photos will be populated by JavaScript -->
+        </div>
+
+        <p class="description">O-Phase 2022</p>
+        <div class="frameGrid" id="log-grid-2022">
+          <!-- 2022 photos will be populated by JavaScript -->
+        </div>
+        
+        <p class="description">O-Phase 2021</p>
+        <div class="frameGrid" id="log-grid-2021">
+          <!-- 2021 photos will be populated by JavaScript -->
+        </div>
+
+        <p class="description">O-Phase 2020 (Corona Special)</p>
+        <div class="frameGrid" id="log-grid-2020">
+          <!-- 2020 photos will be populated by JavaScript -->
+        </div>
+
+        <p class="description">O-Phase 2019</p>
+        <div class="frameGrid" id="log-grid-2019">
+          <!-- 2019 photos will be populated by JavaScript -->
+        </div>
+          
+        <p class="description">O-Phase 2018</p>
+        <div class="frameGrid" id="log-grid-2018">
+          <!-- 2018 photos will be populated by JavaScript -->
+        </div>
+
+        <p class="description">O-Phase 2017</p>
+        <div class="frameGrid" id="log-grid-2017">
+          <!-- 2017 photos will be populated by JavaScript -->
+        </div>
+
+        <p class="description">O-Phase 2016</p>
+        <div class="frameGrid" id="log-grid-2016">
+          <!-- 2016 photos will be populated by JavaScript -->
+        </div>
+
+        <p class="description">O-Phase 2015</p>
+        <div class="frameGrid" id="log-grid-2015">
+          <!-- 2015 photos will be populated by JavaScript -->
+        </div>
+          
+        <p class="description">O-Phase 2014</p>
+        <div class="frameGrid" id="log-grid-2014">
+          <!-- 2014 photos will be populated by JavaScript -->
+        </div>
+
+        <p class="description">O-Phase 2013</p>
+        <div class="frameGrid" id="log-grid-2013">
+          <!-- 2013 photos will be populated by JavaScript -->
+        </div>
+          
+        <p class="description">O-Phase 2012 (Schiffbau)</p>
+        <div class="frameGrid" id="log-grid-2012">
+          <!-- 2012 photos will be populated by JavaScript -->
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div>
+        Piratige Links:
+        <ul>
+          <li><a href="/">Home →</a></li>
+          <li><a href="/crew.html">Crew →</a></li>
+          <li><a href="/schedule.html">Wochenplan →</a></li>
+          <li><a href="/log.html">Logbuch →</a></li>
+          <li><a href="/imprint.html">Impressum →</a></li>
+        </ul>
+      </div>
+
+      <div>
+        Sonstige Links:
+        <ul>
+          <li><a href="https://asta-kit.de">AStA →</a></li>
+          <li><a href="https://kit.edu">KIT →</a></li>
+          <li><a href="https://fsmi.uni-karlsruhe.de">Fachschaft →</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <ul>
+          <li>Pirates, 2024</li>
+          <li>&nbsp;</li>
+          <li>An Land gezogen von Max und Philipp</li> 
+        </ul>
+      </div>
+
+      <div>
+        <a href="https://codewerk.de/"><img src="/public/sponsoring/codewerk.png" width="150" height="75" alt="Codewerk Logo"></a>
+      </div>
+
+      <div>
+        <a href="https://argutia.org/"><img src="/public/sponsoring/luis.jpeg" width="170" height="85" alt="Argutia Logo"></a>
+      </div>
+      
+      <div>
+        <a href="https://pcschmiede.de/"><img src="/public/sponsoring/pcschmiede.svg" width="170" height="85" alt="PC Schmiede Logo"></a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/parallax-js@3.1.0/dist/parallax.min.js"></script>
+  <script>
+    // Initialize parallax
+    const parallaxScene = document.getElementById('parallax-menu');
+    if (parallaxScene) {
+      const parallax = new Parallax(parallaxScene, {
+        pointerEvents: true,
+      });
+    }
+
+    // Mobile detection
+    function isMobile() {
+      return window.matchMedia('(max-width: 480px)').matches;
+    }
+
+    // Frame styles mapping
+    const frameStyles = {
+      "frame1": 'url(/public/crew/frames/frame1.png) 220 stretch',
+      "frame2": 'url(/public/crew/frames/frame2.png) 190 stretch',
+      "frame3": 'url(/public/crew/frames/frame3.png) 105 stretch',
+      "frame4": 'url(/public/crew/frames/frame4.png) 110 stretch',
+      "frame5": 'url(/public/crew/frames/frame5.png) 350 stretch',
+      "frame6": 'url(/public/crew/frames/frame6.png) 240 stretch',
+      "frame7": 'url(/public/crew/frames/frame7.png) 160 stretch'
+    };
+
+    // Log photo data
+    const logPhotos = {
+      2023: [
+        {src: "/public/log/mid_res/2023/1.jpg", frame: "frame5", size: "50px", gridColStart: 19, gridColEnd: 45, gridRowStart: 22, gridRowEnd: 55},
+        {src: "/public/log/mid_res/2023/2.jpg", frame: "frame2", size: "60px", gridColStart: 47, gridColEnd: 73, gridRowStart: 24, gridRowEnd: 55},
+        {src: "/public/log/mid_res/2023/3.jpg", frame: "frame4", size: "40px", gridColStart: 51, gridColEnd: 86, gridRowStart: 4, gridRowEnd: 23},
+        {src: "/public/log/mid_res/2023/4.jpg", frame: "frame1", size: "70px", gridColStart: 17, gridColEnd: 45, gridRowStart: 1, gridRowEnd: 22},
+        {src: "/public/log/mid_res/2023/5.jpg", frame: "frame4", size: "40px", gridColStart: 51, gridColEnd: 86, gridRowStart: 58, gridRowEnd: 86},
+        {src: "/public/log/mid_res/2023/6.jpg", frame: "frame2", size: "60px", gridColStart: 24, gridColEnd: 47, gridRowStart: 57, gridRowEnd: 82},
+        {src: "/public/log/mid_res/2023/7.jpg", frame: "frame1", size: "70px", gridColStart: 15, gridColEnd: 43, gridRowStart: 88, gridRowEnd: 125},
+        {src: "/public/log/mid_res/2023/8.jpg", frame: "frame5", size: "40px", gridColStart: 70, gridColEnd: 94, gridRowStart: 88, gridRowEnd: 116},
+        {src: "/public/log/mid_res/2023/9.jpg", frame: "frame3", size: "60px", gridColStart: 44, gridColEnd: 68, gridRowStart: 87, gridRowEnd: 112}
+      ],
+      2022: [
+        {src: "/public/log/mid_res/2022/1.jpg", frame: "frame5", size: "50px", gridColStart: 19, gridColEnd: 50, gridRowStart: 22, gridRowEnd: 55},
+        {src: "/public/log/mid_res/2022/2.jpg", frame: "frame2", size: "60px", gridColStart: 52, gridColEnd: 85, gridRowStart: 30, gridRowEnd: 55},
+        {src: "/public/log/mid_res/2022/3.jpg", frame: "frame4", size: "40px", gridColStart: 51, gridColEnd: 86, gridRowStart: 4, gridRowEnd: 29},
+        {src: "/public/log/mid_res/2022/4.jpg", frame: "frame1", size: "70px", gridColStart: 17, gridColEnd: 50, gridRowStart: 1, gridRowEnd: 22},
+        {src: "/public/log/mid_res/2022/5.jpg", frame: "frame4", size: "40px", gridColStart: 51, gridColEnd: 86, gridRowStart: 58, gridRowEnd: 81},
+        {src: "/public/log/mid_res/2022/6.jpg", frame: "frame2", size: "60px", gridColStart: 12, gridColEnd: 47, gridRowStart: 57, gridRowEnd: 82}
+      ],
+      2021: [
+        {src: "/public/log/mid_res/2021/1.jpg", frame: "frame5", size: "50px", gridColStart: 12, gridColEnd: 40, gridRowStart: 35, gridRowEnd: 60},
+        {src: "/public/log/original_res/2021/2.jpg", frame: "frame2", size: "30px", gridColStart: 57, gridColEnd: 90, gridRowStart: 1, gridRowEnd: 48},
+        {src: "/public/log/mid_res/2021/3.jpg", frame: "frame4", size: "30px", gridColStart: 41, gridColEnd: 70, gridRowStart: 50, gridRowEnd: 68},
+        {src: "/public/log/mid_res/2021/4.jpg", frame: "frame5", size: "70px", gridColStart: 10, gridColEnd: 57, gridRowStart: 10, gridRowEnd: 33}
+      ],
+      2020: [
+        {src: "/public/log/mid_res/2020/1.jpg", frame: "frame5", size: "30px", gridColStart: 20, gridColEnd: 40, gridRowStart: 42, gridRowEnd: 60},
+        {src: "/public/log/mid_res/2020/2.jpg", frame: "frame6", size: "110px", gridColStart: 57, gridColEnd: 90, gridRowStart: 10, gridRowEnd: 30},
+        {src: "/public/log/mid_res/2020/3.jpg", frame: "frame4", size: "20px", gridColStart: 57, gridColEnd: 78, gridRowStart: 32, gridRowEnd: 45},
+        {src: "/public/log/mid_res/2020/4.jpg", frame: "frame2", size: "100px", gridColStart: 18, gridColEnd: 57, gridRowStart: 5, gridRowEnd: 30},
+        {src: "/public/log/mid_res/2020/5.jpg", frame: "frame2", size: "30px", gridColStart: 65, gridColEnd: 85, gridRowStart: 45, gridRowEnd: 58},
+        {src: "/public/log/mid_res/2020/6.jpg", frame: "frame1", size: "30px", gridColStart: 40, gridColEnd: 55, gridRowStart: 30, gridRowEnd: 45},
+        {src: "/public/log/mid_res/2020/7.jpg", frame: "frame3", size: "30px", gridColStart: 15, gridColEnd: 30, gridRowStart: 30, gridRowEnd: 40},
+        {src: "/public/log/mid_res/2020/8.jpg", frame: "frame5", size: "45px", gridColStart: 40, gridColEnd: 65, gridRowStart: 48, gridRowEnd: 62}
+      ],
+      2019: [
+        {src: "/public/log/mid_res/2019/1.jpg", frame: "frame2", size: "30px", gridColStart: 16, gridColEnd: 55, gridRowStart: 10, gridRowEnd: 30},
+        {src: "/public/log/mid_res/2019/2.jpg", frame: "frame4", size: "90px", gridColStart: 57, gridColEnd: 90, gridRowStart: 15, gridRowEnd: 38},
+        {src: "/public/log/mid_res/2019/3.jpg", frame: "frame3", size: "70px", gridColStart: 10, gridColEnd: 40, gridRowStart: 30, gridRowEnd: 50},
+        {src: "/public/log/mid_res/2019/4.jpg", frame: "frame6", size: "50px", gridColStart: 55, gridColEnd: 75, gridRowStart: 1, gridRowEnd: 15},
+        {src: "/public/log/mid_res/2019/5.jpg", frame: "frame1", size: "65px", gridColStart: 75, gridColEnd: 95, gridRowStart: 1, gridRowEnd: 15},
+        {src: "/public/log/mid_res/2019/6.jpg", frame: "frame5", size: "120px", gridColStart: 11, gridColEnd: 90, gridRowStart: 95, gridRowEnd: 130},
+        {src: "/public/log/mid_res/2019/7.jpg", frame: "frame2", size: "90px", gridColStart: 15, gridColEnd: 45, gridRowStart: 56, gridRowEnd: 87},
+        {src: "/public/log/mid_res/2019/8.jpg", frame: "frame6", size: "150px", gridColStart: 45, gridColEnd: 95, gridRowStart: 42, gridRowEnd: 95}
+      ],
+      2018: [
+        {src: "/public/log/mid_res/2018/1.jpg", frame: "frame5", size: "130px", gridColStart: 15, gridColEnd: 57, gridRowStart: 15, gridRowEnd: 45},
+        {src: "/public/log/mid_res/2018/2.jpg", frame: "frame4", size: "90px", gridColStart: 57, gridColEnd: 95, gridRowStart: 1, gridRowEnd: 28}
+      ],
+      2017: [
+        {src: "/public/log/mid_res/2017/1.jpg", frame: "frame3", size: "130px", gridColStart: 51, gridColEnd: 90, gridRowStart: 15, gridRowEnd: 50},
+        {src: "/public/log/mid_res/2017/2.jpg", frame: "frame2", size: "90px", gridColStart: 17, gridColEnd: 50, gridRowStart: 1, gridRowEnd: 30},
+        {src: "/public/log/mid_res/2017/3.jpg", frame: "frame6", size: "90px", gridColStart: 17, gridColEnd: 50, gridRowStart: 36, gridRowEnd: 60}
+      ],
+      2016: [
+        {src: "/public/log/original_res/2016/1.jpg", frame: "frame5", size: "95px", gridColStart: 15, gridColEnd: 85, gridRowStart: 1, gridRowEnd: 50}
+      ],
+      2015: [
+        {src: "/public/log/original_res/2015/1.jpg", frame: "frame6", size: "95px", gridColStart: 15, gridColEnd: 85, gridRowStart: 1, gridRowEnd: 50}
+      ],
+      2014: [
+        {src: "/public/log/mid_res/2014/1.jpg", frame: "frame2", size: "90px", gridColStart: 12, gridColEnd: 57, gridRowStart: 1, gridRowEnd: 30},
+        {src: "/public/log/mid_res/2014/2.jpg", frame: "frame1", size: "90px", gridColStart: 57, gridColEnd: 96, gridRowStart: 15, gridRowEnd: 40},
+        {src: "/public/log/mid_res/2014/3.jpg", frame: "frame3", size: "100px", gridColStart: 10, gridColEnd: 55, gridRowStart: 30, gridRowEnd: 60},
+        {src: "/public/log/mid_res/2014/4.jpg", frame: "frame6", size: "50px", gridColStart: 57, gridColEnd: 77, gridRowStart: 1, gridRowEnd: 15},
+        {src: "/public/log/mid_res/2014/5.jpg", frame: "frame4", size: "35px", gridColStart: 78, gridColEnd: 95, gridRowStart: 3, gridRowEnd: 15}
+      ],
+      2013: [
+        {src: "/public/log/mid_res/2013/1.jpg", frame: "frame6", size: "95px", gridColStart: 22, gridColEnd: 90, gridRowStart: 1, gridRowEnd: 35},
+        {src: "/public/log/mid_res/2013/2.jpg", frame: "frame2", size: "90px", gridColStart: 15, gridColEnd: 45, gridRowStart: 37, gridRowEnd: 57},
+        {src: "/public/log/mid_res/2013/3.jpg", frame: "frame5", size: "150px", gridColStart: 45, gridColEnd: 90, gridRowStart: 35, gridRowEnd: 65}
+      ],
+      2012: [
+        {src: "/public/log/mid_res/2012/1.jpg", frame: "frame6", size: "50px", gridColStart: 65, gridColEnd: 90, gridRowStart: 27, gridRowEnd: 45},
+        {src: "/public/log/mid_res/2012/2.jpg", frame: "frame1", size: "65px", gridColStart: 62, gridColEnd: 85, gridRowStart: 1, gridRowEnd: 23},
+        {src: "/public/log/mid_res/2012/3.jpg", frame: "frame5", size: "150px", gridColStart: 20, gridColEnd: 60, gridRowStart: 1, gridRowEnd: 40}
+      ]
+    };
+
+    // Render log photos for a specific year
+    function renderLogYear(year) {
+      const grid = document.getElementById(`log-grid-${year}`);
+      if (!grid) return;
+      
+      const photos = logPhotos[year];
+      if (!photos) return;
+      
+      const mobile = isMobile();
+      
+      photos.forEach(photo => {
+        const frameDiv = document.createElement('div');
+        frameDiv.className = 'gridItemFrame';
+        
+        const frameSize = photo.size + ' solid transparent';
+        const frameImage = frameStyles[photo.frame];
+        
+        if (mobile) {
+          frameDiv.style.cssText = `border: ${frameSize}; border-image: ${frameImage}; width: 100%; height: 100%;`;
+        } else {
+          frameDiv.style.cssText = `border: ${frameSize}; border-image: ${frameImage}; grid-column-start: ${photo.gridColStart}; grid-column-end: ${photo.gridColEnd}; grid-row-start: ${photo.gridRowStart}; grid-row-end: ${photo.gridRowEnd}; width: 100%; height: 100%;`;
+        }
+        
+        const img = document.createElement('img');
+        img.src = photo.src;
+        img.style.cssText = 'width: 100%; height: 100%;';
+        frameDiv.appendChild(img);
+        grid.appendChild(frameDiv);
+      });
+    }
+
+    // Render all log years
+    function renderLog() {
+      Object.keys(logPhotos).forEach(year => {
+        renderLogYear(year);
+      });
+    }
+
+    // Initialize log on load
+    window.addEventListener('load', renderLog);
+  </script>
+</body>
+</html>
