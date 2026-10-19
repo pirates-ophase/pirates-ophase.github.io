@@ -389,15 +389,3 @@ body {
         filter: invert(1);
     }
 }
-
-.map-box {
-    width: 90vw;
-    max-width: 900px;
-    margin: 2rem auto;
-}
-
-treasure-hunt {
-    display: block !important;
-    width: 100% !important;
-    max-width: 100% !important;
-}

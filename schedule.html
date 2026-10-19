@@ -53,13 +53,22 @@
             <main class="main">
                 <h1 class="title">Wochenplan</h1>
 
-                <div class="map-box">
+                <div
+                    style="
+                        width: 100%;
+                        max-width: 480px;
+                        margin: 1.5rem auto;
+                        padding: 0 1rem;
+                        box-sizing: border-box;
+                    "
+                >
                     <treasure-hunt
                         src="./public/schedule/schedule.json"
                         orientation="panels"
                     ></treasure-hunt>
-                    <script type="module" src="./treasure-hunt.es.js"></script>
                 </div>
+
+                <script type="module" src="./treasure-hunt.es.js"></script>
             </main>
 
             <footer class="footer">
