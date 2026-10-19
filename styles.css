@@ -389,21 +389,3 @@ body {
         filter: invert(1);
     }
 }
-
-.map-sizer {
-    width: 800px; /* Or whatever width you want: e.g. 70vw, 850px, etc. */
-    max-width: 90%; /* Ensures it doesn't overflow small screens */
-    margin: 2rem auto; /* Centers it */
-}
-
-.map-sizer treasure-hunt {
-    display: block;
-    width: 100%;
-}
-
-treasure-hunt {
-    display: block !important;
-    width: 850px !important; /* Desired width */
-    max-width: 90vw !important; /* Responsive cap */
-    margin: 0 auto !important; /* Center horizontally */
-}
