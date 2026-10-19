@@ -1,0 +1,194 @@
+[
+    {
+        "day": "Mo",
+        "label": "Montag",
+        "terrain": "sandbank",
+        "events": [
+            {
+                "id": "mo-1",
+                "title": "Kennenlernspiele",
+                "time": "12:30 - 17:00",
+                "location": "z10",
+                "description": ""
+            },
+            {
+                "id": "mo-3",
+                "title": "Essen im Vogelbräu",
+                "time": "18:00 - 20:00",
+                "location": "Vogelbräu",
+                "description": "Auswährts Essi in der Taverne."
+            },
+            {
+                "id": "mo-4",
+                "title": "Bartour",
+                "time": "20:00 - Open End",
+                "location": "Vorm Vogelbräu",
+                "description": "20:00 Schwarzer Kater (Hoepfner Pils 0,5l + Tequila oder Jägermeister shots für 1,50€)\n\n21:30 Enchi (Gratisshot + Happyhour preise)\n\n23:00 Aposto (Happyhour preise)",
+                "isMainEvent": true
+            }
+        ]
+    },
+    {
+        "day": "Di",
+        "label": "Dienstag",
+        "terrain": "jungle",
+        "events": [
+            {
+                "id": "di-1",
+                "title": "Mensa Brunch",
+                "time": "10:30 - 12:00",
+                "location": "Mensa",
+                "description": "Koeri Essi."
+            },
+            {
+                "id": "di-2",
+                "title": "FBI & Campustour",
+                "time": "14:00 - 17:00",
+                "location": "Audimax, Treffpunkt: z10",
+                "description": "Informationsveranstaltung von der Fachschaft.\n\nAnschließend den Campus erkunden."
+            },
+            {
+                "id": "di-3",
+                "title": "Abendessen",
+                "time": "17:00 - 20:00",
+                "location": "z10",
+                "description": "Von uns für euch gekochtes Essi. \n\n Gibt Chili."
+            },
+            {
+                "id": "di-4",
+                "title": "O-Rave im AKK",
+                "time": "20:00 - 03:00",
+                "location": "AKK",
+                "description": "Alternativ ab 22:30 Uhr im z10 chillen."
+            }
+        ]
+    },
+    {
+        "day": "Mi",
+        "label": "Mittwoch",
+        "terrain": "fortress",
+        "events": [
+            {
+                "id": "mi-1",
+                "title": "Frühstück",
+                "time": "09:30 - 12:30",
+                "location": "z10",
+                "description": "Frühes Essi."
+            },
+            {
+                "id": "mi-2",
+                "title": "Olympia",
+                "time": "13:00 - 17:00",
+                "location": "Kein Plan.",
+                "description": "Fällt eh aus"
+            },
+            {
+                "id": "mi-3",
+                "title": "Cocktailabend",
+                "time": "20:00 - 03:00",
+                "location": "HaDiKo, K4-Bar",
+                "description": "Cocktailabend mit bestem Preis-Alkohol Verhältnis in ganz Karlsruhe!\n\n    Cocktailabend Spiel funny.",
+                "isMainEvent": true
+            }
+        ]
+    },
+    {
+        "day": "Do",
+        "label": "Donnerstag",
+        "terrain": "jungle",
+        "events": [
+            {
+                "id": "do-1",
+                "title": "Katerfrühstück",
+                "time": "10:30 - 12:30",
+                "location": "z10",
+                "description": "Frühes verkartertes Essi mit weißen Würsten."
+            },
+            {
+                "id": "do-2",
+                "title": "O-Rallye",
+                "time": "11:00 - 17:00",
+                "location": "Treffpunkt z10",
+                "description": "Von der Fachschaft organisierte stationen-Rallye durch die Stadt mit Mini-Spielen & Quizfragen."
+            },
+            {
+                "id": "do-3",
+                "title": "Grillen",
+                "time": "17:00 - 03:00",
+                "location": "HaDiKo, K6-Bar",
+                "description": "Verkohltes Essi."
+            }
+        ]
+    },
+    {
+        "day": "Fr",
+        "label": "Freitag",
+        "terrain": "skull_rock",
+        "events": [
+            {
+                "id": "fr-1",
+                "title": "Frühstück",
+                "time": "09:30 - 11:00",
+                "location": "z10",
+                "description": ""
+            },
+            {
+                "id": "fr-2",
+                "title": "Abschlussveranstaltung & Scottland Yard",
+                "time": "11:30 - 17:00",
+                "location": "Audimax",
+                "description": "",
+                "isMainEvent": true
+            },
+            {
+                "id": "fr-3",
+                "title": "Abendessen in der Kippe",
+                "time": "17:00 - 20:00",
+                "location": "Kippe 23",
+                "description": "Kippe Schnitzel Essi."
+            },
+            {
+                "id": "fr-3",
+                "title": "Sumpfen im z10",
+                "time": "18:00 - Open End",
+                "location": "z10",
+                "description": "Die Woche Entspannt ausklingen lassen.\n\nAlternativ: Weiterfeiern beim GeistSoz Rave"
+            }
+        ]
+    },
+    {
+        "day": "Sa",
+        "label": "Samstag",
+        "terrain": "sandbank",
+        "events": [
+            {
+                "id": "sa-1",
+                "title": "Mädelsbrunch",
+                "time": "10:00 - 12:00",
+                "location": "Mathebau",
+                "description": ""
+            },
+            {
+                "id": "sa-1",
+                "title": "Mathematiker:innen-Nachmittag & Lehramtsnachmittag",
+                "time": "10:00 - 12:00",
+                "location": "Mathebau",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "day": "So",
+        "label": "Sonntag",
+        "terrain": "treasure",
+        "events": [
+            {
+                "id": "so-1",
+                "title": "Wandern",
+                "time": "Kein Plan",
+                "location": "Wald",
+                "description": "Noch mal Gras touchen bevor Uni beginnt."
+            }
+        ]
+    }
+]
