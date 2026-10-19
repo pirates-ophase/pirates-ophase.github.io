@@ -7,21 +7,21 @@
             {
                 "id": "mo-1",
                 "title": "Kennenlernspiele",
-                "time": "13:00 - 17:00",
+                "time": "12:30 - 17:00",
                 "location": "z10",
                 "description": ""
             },
             {
                 "id": "mo-3",
                 "title": "Essen im Vogelbräu",
-                "time": "16:30 - 18:30",
+                "time": "18:00 - 20:00",
                 "location": "Vogelbräu",
                 "description": "Auswährts Essi in der Taverne."
             },
             {
                 "id": "mo-4",
                 "title": "Bartour",
-                "time": "19:30 - Open End",
+                "time": "20:00 - Open End",
                 "location": "Treffpunkt: Vorm Vogelbräu",
                 "description": "20:00 Schwarzer Kater (Hoepfner Pils 0,5l + Tequila oder Jägermeister shots für 1,50€)\n\n21:30 Enchi (Gratisshot + Happyhour preise)\n\n23:00 Aposto (Happyhour preise)",
                 "isMainEvent": true
@@ -37,20 +37,20 @@
                 "id": "di-1",
                 "title": "Mensa Brunch",
                 "time": "10:30 - 12:00",
-                "location": "Rechnerpools / Geb. 50.34",
+                "location": "Mensa",
                 "description": "Koeri Essi."
             },
             {
                 "id": "di-2",
                 "title": "FBI & Campustour",
-                "time": "12:00 - 13:30",
+                "time": "14:00 - 17:00",
                 "location": "Audimax, Treffpunkt: z10",
                 "description": "Informationsveranstaltung von der Fachschaft.\n\nAnschließend den Campus erkunden."
             },
             {
                 "id": "di-3",
                 "title": "Abendessen",
-                "time": "14:00 - 16:00",
+                "time": "17:00 - 20:00",
                 "location": "z10",
                 "description": "Von uns für euch gekochtes Essi. \n\n Gibt Chili."
             },
@@ -71,7 +71,7 @@
             {
                 "id": "mi-1",
                 "title": "Frühstück",
-                "time": "09:30 - 12:00",
+                "time": "09:30 - 12:30",
                 "location": "z10",
                 "description": "Frühes Essi."
             },
@@ -107,7 +107,7 @@
             {
                 "id": "do-2",
                 "title": "O-Rallye",
-                "time": "14:00 - 17:30",
+                "time": "11:00 - 17:00",
                 "location": "Treffpunkt z10",
                 "description": "Von der Fachschaft organisierte stationen-Rallye durch die Stadt mit Mini-Spielen & Quizfragen."
             },
@@ -130,14 +130,14 @@
                 "title": "Frühstück",
                 "time": "09:30 - 11:00",
                 "location": "z10",
-                "description": "Markt der Möglichkeiten: Lerne Initiativen, Musikgruppen und Sportangebote kennen."
+                "description": ""
             },
             {
                 "id": "fr-2",
                 "title": "Abschlussveranstaltung & Scottland Yard",
                 "time": "11:30 - 17:00",
                 "location": "Audimax",
-                "description": "Basteln, Löten und Einführung in den 3D-Druck der Universität.",
+                "description": "",
                 "isMainEvent": true
             },
             {
@@ -145,12 +145,12 @@
                 "title": "Abendessen in der Kippe",
                 "time": "17:00 - 20:00",
                 "location": "Kippe 23",
-                "description": "Kippe Schnitz."
+                "description": "Kippe Schnitzel Essi."
             },
             {
                 "id": "fr-3",
                 "title": "Sumpfen im z10",
-                "time": "20:00 - Open End",
+                "time": "18:00 - Open End",
                 "location": "z10",
                 "description": "Die Woche Entspannt ausklingen lassen.\n\nAlternativ: Weiterfeiern beim GeistSoz Rave"
             }
@@ -165,7 +165,7 @@
                 "id": "sa-1",
                 "title": "Mädelsbrunch",
                 "time": "10:00 - 12:00",
-                "location": "Wohnheim-Taverne",
+                "location": "Mathebau",
                 "description": ""
             },
             {
